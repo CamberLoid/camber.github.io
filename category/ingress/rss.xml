@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Camber&#39;s Logistics | Archive • Posts by &#34;ingress&#34; category</title>
+        <link>https://camber.moe</link>
+        <description>Camber物流 | 存档处</description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 01 Jan 2020 15:01:27 +0800</pubDate>
+        <lastBuildDate>Wed, 01 Jan 2020 15:01:27 +0800</lastBuildDate>
+        <category>Algorithm</category>
+        <category>RAW</category>
+        <category>Memo</category>
+        <category>Searching</category>
+        <category>Mo-Yu</category>
+        <category>咕咕咕, 想不出来, 随笔</category>
+        <item>
+            <guid isPermalink="true">https://camber.moe/2020/Operation-BlackRay-PAR/</guid>
+            <title>从计划到实施只有16个小时的行动:黑光</title>
+            <link>https://camber.moe/2020/Operation-BlackRay-PAR/</link>
+            <pubDate>Wed, 01 Jan 2020 15:01:27 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;font color=lightBlue&gt;来自ADA的提示：&lt;br&gt;本文可能包含流水账 语无伦次 图文无关 跑题等现象&lt;br&gt;&lt;strong&gt;所有记录经过修改润色加工，一般情况下都不是原意。&lt;/strong&gt;&lt;br&gt;发布于博客和北蓝公众号。&lt;br&gt;&lt;/font&gt;   &lt;/p&gt;
+&lt;h2 id=&#34;0x1F-前前言&#34;&gt;&lt;a href=&#34;#0x1F-前前言&#34; class=&#34;headerlink&#34; title=&#34;0x1F 前前言&#34;&gt;&lt;/a&gt;0x1F 前前言&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;2019.12.21 记录开始&amp;gt;&lt;br&gt;&lt;del&gt;开始动笔&lt;/del&gt; 收到了来自[数据删除]的R6申请。开始R6。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;2019.12.30 记录开始&amp;gt;&lt;br&gt;我可能真的是个鸽子。&lt;br&gt;从动键盘到现在已经9天了，期间，肝到了Umbra牌子，参加了福蓝尾牙，&lt;br&gt;但稿子愣是没有写一个字，而且，尾牙那边还缺人写稿。&lt;br&gt;为了保命提议每人写一点，但是谁知道会不会钦定我呢？ 所以，先搞定这边吧&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;2019.12.30 记录开始&amp;gt;&lt;br&gt;啊Splatoon2真好玩。&lt;br&gt;该写稿子了&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;2019.12.31 记录开始&amp;gt;&lt;br&gt;在2020年前把稿子肝完了。&lt;br&gt;可喜可贺。&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;0x00-前言&#34;&gt;&lt;a href=&#34;#0x00-前言&#34; class=&#34;headerlink&#34; title=&#34;0x00 前言&#34;&gt;&lt;/a&gt;0x00 前言&lt;/h2&gt;&lt;p&gt;北冥有鱼，其名为咸。&lt;br&gt;懒军有鸽，其名为我。(确信)  –拱拱&lt;br&gt;所以，一只鸽子能刷350万MU也是个奇迹，得写战报。–蓝瓜&lt;/p&gt;
+&lt;h2 id=&#34;0x01-咕咕-太长不看版&#34;&gt;&lt;a href=&#34;#0x01-咕咕-太长不看版&#34; class=&#34;headerlink&#34; title=&#34;0x01 咕咕/太长不看版&#34;&gt;&lt;/a&gt;0x01 咕咕/太长不看版&lt;/h2&gt;&lt;p&gt;&lt;del&gt;既然标题都咕咕了，那我这章也就咕了&lt;/del&gt;&lt;br&gt;约了 到了 盖了 黑了 饿了 吃了 走了 累了 摸了  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;侦测到Resistance-Pigeon”咕咕”模因效应，开始进行Anti-Pigeon模因干预。 –ADA&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;0x02-12-15-12-16&#34;&gt;&lt;a href=&#34;#0x02-12-15-12-16&#34; class=&#34;headerlink&#34; title=&#34;0x02 12.15/12.16&#34;&gt;&lt;/a&gt;0x02 12.15/12.16&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;没人喜欢头顶上盖着个绿绿的盖子。至少我是。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这次盖场的起因是我打掉了一个盖子。&lt;br&gt;被深圳北站成堆的任务吸引过去的我打开了Ingress，然后，看到了个大大的绿盖子,&lt;del&gt;关游戏。&lt;/del&gt; 打开IITC，找到顶点，打掉了。  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录开始&amp;gt;&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;: 简上村那个Po是啥工或者床吗&lt;br&gt;&lt;strong&gt;探员▆▆▆**&lt;/strong&gt;：随便打，有人维护的&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;当天傍晚，在我愉快地刷没眼没胸的阿尔托莉雅时(垃圾猩猩)，收到了来自司机&lt;font color=blue&gt;@Tabrisj&lt;/font&gt;的联络。  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录开始&amp;gt;  &lt;/p&gt;
+&lt;p&gt;&amp;lt;前言: &lt;strong&gt;探员TabrisJ&lt;/strong&gt;注意到探员CamberOvO于当天下午早些时候攻击了&lt;em&gt;简上村&lt;/em&gt; 由于目前活跃的抵抗军不多，故发来联络。&amp;gt;&lt;br&gt;&lt;strong&gt;探员TabrisJ&lt;/strong&gt;: (问好)，你最近都在龙华吗&lt;br&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;说明自己是过来旅游的&amp;gt;&lt;br&gt;&lt;strong&gt;探员TabrisJ&lt;/strong&gt;：哦哦，看你打了简上村&lt;br&gt;&lt;strong&gt;探员TabrisJ&lt;/strong&gt;：想着要是有条件可以配合一波，封一下&lt;br&gt;&amp;lt;此后两位探员讨论了关于打掉羊台山的信息&amp;gt;&lt;br&gt;&lt;strong&gt;探员TabrisJ&lt;/strong&gt;：你一走又变回原样了，意义不大。你MU黑牌如果没到手的话，我们倒是可以谋划一下&lt;br&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;表示同意，并说明自己的行动可能时间&amp;gt;&lt;br&gt;&lt;strong&gt;探员TabrisJ&lt;/strong&gt;：那我们社畜带不动，[数据删除]，&lt;strong&gt;StarryCocoon&lt;/strong&gt;应该可以外出。   &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然后就愉快的把阿尔托莉雅刷完了。任务共计7排42个牌子。在北站吃了顿Subway然后和同学扯皮了一会儿就溜回了住处。在床上肝了一会儿小畜生剑盾的Raid后，接到联络。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;当天晚些时候&amp;gt;&lt;br&gt;&lt;strong&gt;探员TabrisJ&lt;/strong&gt;：他大概已经有想法了，去找他吧。谨记保密。&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录开始, 时间12.17 0030 CST&amp;gt;&lt;br&gt;&amp;lt;探员StarryCocoon接受联络请求&amp;gt;&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：话说[数据删除]是全天有空的么&lt;br&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;表示同意&amp;gt;&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：明天或者后天？反正也就一天的事&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：后天吧，明天晚上刚好和一个港中深的同学有约来着w&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：周三晚上？&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：啊呸，周二。&lt;br&gt;&amp;lt;此处出现了时间观念误会，在此说明。事后&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;表示：可还行。&amp;gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：有上山么？&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：不用啊&lt;br&gt;&amp;lt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;向&lt;strong&gt;探员CamberOvO&lt;/strong&gt;展示了行动规划，&amp;gt;&lt;br&gt;&amp;lt;数据读取失败，需要4/2154级权限。&amp;gt;&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：我周二清一下五和坂田那边，如果能起的了床的话。&lt;br&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;表示一头雾水。&amp;gt;&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：反正您老只要周三或者周四跟我去西丽湖那边就完事。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：dalao这几天没课是么？&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：这几天闲的很&lt;br&gt;&amp;lt;由于未知原因，&lt;strong&gt;探员CamberOvO&lt;/strong&gt;和&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;开始讨论关于垃圾的话题。双方对两人都是垃圾达成共识。ADA将介入调查。详细数据需要4/2154级权限访问。&amp;gt;  &lt;/p&gt;
+&lt;p&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;表示网络有点卡&amp;gt;&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：&amp;lt;调侃语气&amp;gt;如果你在猩猩机房旁边会这样吗（被打&lt;br&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;成功加载地图&amp;gt;&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：woc，我记错了，是哈工深，明天就在那边了。&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：我不保证清完www&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：那边有活跃绿军么？感觉我清了然后周三行动的话，很好挡住啊。&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：[数据删除]和他老婆。清完就直接连上了还等周三干嘛。&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：&amp;lt;表示赞同&amp;gt;那白天再说了我困了。&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;br&gt;&amp;lt;检测到额外记录，正在加载。–ADA&amp;gt;&lt;br&gt;&amp;lt;出于权限影响，额外记录将加载到另一篇文档。–ADA&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;0x03-12-17-Blackray&#34;&gt;&lt;a href=&#34;#0x03-12-17-Blackray&#34; class=&#34;headerlink&#34; title=&#34;0x03 12.17/Blackray&#34;&gt;&lt;/a&gt;0x03 12.17/Blackray&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;你以为他鸽了，他没鸽，也是一种鸽。–CamberOvO&lt;br&gt;那好，我不来了。–StarryCocoon&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;嗯，美好的一觉，起床12点了。没有咕咕，真好。&lt;br&gt;和&lt;font color=blue&gt;@StarryCocoon&lt;/font&gt;联系了一下，发现他也刚起床。真就同为垃圾。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录开始，时间12.17 1330 CST&amp;gt;&lt;br&gt;&amp;lt;探员StarryCocoon接受联络请求&amp;gt;&lt;br&gt;[已编辑]&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：上地铁了，等下转五号线去大学城。&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：我可能下午才去西丽湖那边&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：所以现在是中午？&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：差不多，反正三四点才过去那边。还在等巨佬清block。  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然后本蒟蒻在地铁上发现了友军把block清除了&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：我叫的。&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：Julao牛逼。&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：清障那个才是巨佬。&lt;del&gt;其实本来以为要鸽掉的&lt;/del&gt;&lt;br&gt;&amp;lt;来自ADA的解释：对[数据删除]探员使用了模因Resistance-AntiPigeon”咕咕天敌”。&amp;gt;&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：你以为他要鸽了 他没鸽 也是一种鸽&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：那好，我不来了。（确信&lt;br&gt;&amp;lt;侦测到咕咕情景。已对&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;使用模因Resistance-AntiPigeon”咕咕天敌” –ADA&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;和友人A会面后，先由友人A带路去维也纳酒店…后面的小庙清了下新的Block。拍照。&lt;br&gt;(友人A：(笑)这啥？你游神秘仪式？)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录已读取 –ADA&amp;gt;&lt;br&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D1&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：&amp;lt;图片:方氏宗祠&amp;gt;，等下清下这个po，又射回去了。&lt;br&gt;&amp;lt;30分钟后&amp;gt;&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：毒了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然后是在等s佬过来时，和友人A逛了逛HITSZ,THUSZ,PKUSZ等本有害垃圾考不上的学校，稍微摸了下Po，清了下障。  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录已读取 –ADA&amp;gt;&lt;br&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D2&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：&amp;lt;图片:大学城图书馆&amp;gt; 配合下打这个po。&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：尬了，走过了，在THU。问题不大，走回去。&lt;br&gt;&amp;lt;10分钟后&amp;gt;&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：到了，打吗？&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：等下&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：算了，打吧&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：确定吗？&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：还是等下吧。&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：噗。&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：打吧。&lt;br&gt;&amp;lt;以上对话发生在一分钟内。重新评估即将进行。 –ADA&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;于1530左右与友人A成功在野生动物园与&lt;font color=blue&gt;@StarryCocoon&lt;/font&gt;会和。换卡。拍照。 &amp;gt; &amp;lt;记录已读取 –ADA&amp;gt;   &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D3&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(友人A: 嗯。神秘仪式。我懂了。)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：人呢&lt;br&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;定位飘了&amp;gt;&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：50回收手机&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;1535，行动开始。&lt;br&gt;一层50w，人均7层。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;获得的勋章：Mind Controller Black –ADA&amp;gt;&lt;br&gt;&amp;lt;记录已读取 –ADA&amp;gt;&lt;br&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D4&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;后来三个人漫步大学城，谈论了GCP(老版Scanner)和AWS(新版Prime)。&lt;br&gt;（然鹅DNS仍然显示猩猩用的GCP。。。这啥情况）&lt;br&gt;晚上在大学城附近和&lt;font color=blue&gt;@StarryCocoon&lt;/font&gt;与友人A开了个饭，就溜了。  &lt;/p&gt;
+&lt;p&gt;行动结束。从规划到实行共耗时16小时。&lt;/p&gt;
+&lt;p&gt;当天晚些时候，有幸面基司机&lt;font color=blue&gt;@TabrisJ&lt;/font&gt;并且换了卡。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录读取失败：读取数据需要4/4942权限。 –ADA&amp;gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;事后和这些卡片合了影。  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录已读取 –ADA&amp;gt;&lt;br&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D5&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;0x04-12-18-12-19-后记&#34;&gt;&lt;a href=&#34;#0x04-12-18-12-19-后记&#34; class=&#34;headerlink&#34; title=&#34;0x04 12.18/12.19/后记&#34;&gt;&lt;/a&gt;0x04 12.18/12.19/后记&lt;/h2&gt;&lt;p&gt;盖的当天就被司机&lt;font color=blue&gt;@TabrisJ&lt;/font&gt;毒了，求本咸鱼的心理阴影面积  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;ADA：正在计算&amp;gt;&lt;br&gt;&amp;lt;ADA：结论 &lt;strong&gt;探员CamberOvO&lt;/strong&gt; 的心理阴影面积为 3.5 Million MU&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;ADA：警告，侦测到第四面墙的意外穿透。已记录此次意外&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(这也能吐槽自己啊。。。)&lt;br&gt;总之，我和&lt;font color=blue&gt;@StarryCocoon&lt;/font&gt;上榜了。。。还上了Reddit r/ingress Trend。&lt;br&gt;司机&lt;font color=blue&gt;@TabrisJ&lt;/font&gt;因为要帮另一个友军搞牌子所以毒了顶点。愿友军也能够成功开黑牌。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;检测到额外记录，正在加载。–ADA&amp;gt;&lt;br&gt;&amp;lt;出于权限影响，额外记录将加载到另一篇文档。–ADA&amp;gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;深圳北站是个好地方。本废物在这成功刷了，12排任务。可喜可贺。&lt;br&gt;后来又去了西乡和老街，成功搞到了SpecOPS白金牌子。可喜可贺。&lt;del&gt;现在就卡AP了。&lt;/del&gt;  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录已读取 –ADA&amp;gt;&lt;br&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D6&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;检测到额外记录，正在加载。–ADA&amp;gt;&lt;br&gt;&amp;lt;出于权限影响，额外记录将加载到另一篇文档。–ADA&amp;gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;0x05-Credit&#34;&gt;&lt;a href=&#34;#0x05-Credit&#34; class=&#34;headerlink&#34; title=&#34;0x05 Credit&#34;&gt;&lt;/a&gt;0x05 Credit&lt;/h2&gt;&lt;p&gt;由&lt;del&gt;探员&lt;/del&gt; 本咸鱼&lt;font color=blue&gt;@CamberOvO&lt;/font&gt;倾情呈现&lt;br&gt;探员&lt;font color=blue&gt;@StarryCocoon @TabrisJ&lt;/font&gt; 以及 某不知名的友人A&lt;br&gt;提供大力支持。  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;ADA: 是否向友人A发送邀请邮件？&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;唔，我早前以社工游戏名义邀请过。对方表示感兴趣，然后不玩。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;ADA: 了解。&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

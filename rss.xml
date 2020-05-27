@@ -1,0 +1,405 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Camber&#39;s Logistics | Archive</title>
+        <link>https://camber.moe</link>
+        <description>Camber物流 | 存档处</description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 01 Jan 2020 15:01:27 +0800</pubDate>
+        <lastBuildDate>Wed, 01 Jan 2020 15:01:27 +0800</lastBuildDate>
+        <category>Algorithm</category>
+        <category>RAW</category>
+        <category>Memo</category>
+        <category>Searching</category>
+        <category>Mo-Yu</category>
+        <category>咕咕咕, 想不出来, 随笔</category>
+        <item>
+            <guid isPermalink="true">https://camber.moe/2020/Operation-BlackRay-PAR/</guid>
+            <title>从计划到实施只有16个小时的行动:黑光</title>
+            <link>https://camber.moe/2020/Operation-BlackRay-PAR/</link>
+            <pubDate>Wed, 01 Jan 2020 15:01:27 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;font color=lightBlue&gt;来自ADA的提示：&lt;br&gt;本文可能包含流水账 语无伦次 图文无关 跑题等现象&lt;br&gt;&lt;strong&gt;所有记录经过修改润色加工，一般情况下都不是原意。&lt;/strong&gt;&lt;br&gt;发布于博客和北蓝公众号。&lt;br&gt;&lt;/font&gt;   &lt;/p&gt;
+&lt;h2 id=&#34;0x1F-前前言&#34;&gt;&lt;a href=&#34;#0x1F-前前言&#34; class=&#34;headerlink&#34; title=&#34;0x1F 前前言&#34;&gt;&lt;/a&gt;0x1F 前前言&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;2019.12.21 记录开始&amp;gt;&lt;br&gt;&lt;del&gt;开始动笔&lt;/del&gt; 收到了来自[数据删除]的R6申请。开始R6。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;2019.12.30 记录开始&amp;gt;&lt;br&gt;我可能真的是个鸽子。&lt;br&gt;从动键盘到现在已经9天了，期间，肝到了Umbra牌子，参加了福蓝尾牙，&lt;br&gt;但稿子愣是没有写一个字，而且，尾牙那边还缺人写稿。&lt;br&gt;为了保命提议每人写一点，但是谁知道会不会钦定我呢？ 所以，先搞定这边吧&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;2019.12.30 记录开始&amp;gt;&lt;br&gt;啊Splatoon2真好玩。&lt;br&gt;该写稿子了&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;2019.12.31 记录开始&amp;gt;&lt;br&gt;在2020年前把稿子肝完了。&lt;br&gt;可喜可贺。&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;0x00-前言&#34;&gt;&lt;a href=&#34;#0x00-前言&#34; class=&#34;headerlink&#34; title=&#34;0x00 前言&#34;&gt;&lt;/a&gt;0x00 前言&lt;/h2&gt;&lt;p&gt;北冥有鱼，其名为咸。&lt;br&gt;懒军有鸽，其名为我。(确信)  –拱拱&lt;br&gt;所以，一只鸽子能刷350万MU也是个奇迹，得写战报。–蓝瓜&lt;/p&gt;
+&lt;h2 id=&#34;0x01-咕咕-太长不看版&#34;&gt;&lt;a href=&#34;#0x01-咕咕-太长不看版&#34; class=&#34;headerlink&#34; title=&#34;0x01 咕咕/太长不看版&#34;&gt;&lt;/a&gt;0x01 咕咕/太长不看版&lt;/h2&gt;&lt;p&gt;&lt;del&gt;既然标题都咕咕了，那我这章也就咕了&lt;/del&gt;&lt;br&gt;约了 到了 盖了 黑了 饿了 吃了 走了 累了 摸了  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;侦测到Resistance-Pigeon”咕咕”模因效应，开始进行Anti-Pigeon模因干预。 –ADA&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;0x02-12-15-12-16&#34;&gt;&lt;a href=&#34;#0x02-12-15-12-16&#34; class=&#34;headerlink&#34; title=&#34;0x02 12.15/12.16&#34;&gt;&lt;/a&gt;0x02 12.15/12.16&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;没人喜欢头顶上盖着个绿绿的盖子。至少我是。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这次盖场的起因是我打掉了一个盖子。&lt;br&gt;被深圳北站成堆的任务吸引过去的我打开了Ingress，然后，看到了个大大的绿盖子,&lt;del&gt;关游戏。&lt;/del&gt; 打开IITC，找到顶点，打掉了。  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录开始&amp;gt;&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;: 简上村那个Po是啥工或者床吗&lt;br&gt;&lt;strong&gt;探员▆▆▆**&lt;/strong&gt;：随便打，有人维护的&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;当天傍晚，在我愉快地刷没眼没胸的阿尔托莉雅时(垃圾猩猩)，收到了来自司机&lt;font color=blue&gt;@Tabrisj&lt;/font&gt;的联络。  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录开始&amp;gt;  &lt;/p&gt;
+&lt;p&gt;&amp;lt;前言: &lt;strong&gt;探员TabrisJ&lt;/strong&gt;注意到探员CamberOvO于当天下午早些时候攻击了&lt;em&gt;简上村&lt;/em&gt; 由于目前活跃的抵抗军不多，故发来联络。&amp;gt;&lt;br&gt;&lt;strong&gt;探员TabrisJ&lt;/strong&gt;: (问好)，你最近都在龙华吗&lt;br&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;说明自己是过来旅游的&amp;gt;&lt;br&gt;&lt;strong&gt;探员TabrisJ&lt;/strong&gt;：哦哦，看你打了简上村&lt;br&gt;&lt;strong&gt;探员TabrisJ&lt;/strong&gt;：想着要是有条件可以配合一波，封一下&lt;br&gt;&amp;lt;此后两位探员讨论了关于打掉羊台山的信息&amp;gt;&lt;br&gt;&lt;strong&gt;探员TabrisJ&lt;/strong&gt;：你一走又变回原样了，意义不大。你MU黑牌如果没到手的话，我们倒是可以谋划一下&lt;br&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;表示同意，并说明自己的行动可能时间&amp;gt;&lt;br&gt;&lt;strong&gt;探员TabrisJ&lt;/strong&gt;：那我们社畜带不动，[数据删除]，&lt;strong&gt;StarryCocoon&lt;/strong&gt;应该可以外出。   &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然后就愉快的把阿尔托莉雅刷完了。任务共计7排42个牌子。在北站吃了顿Subway然后和同学扯皮了一会儿就溜回了住处。在床上肝了一会儿小畜生剑盾的Raid后，接到联络。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;当天晚些时候&amp;gt;&lt;br&gt;&lt;strong&gt;探员TabrisJ&lt;/strong&gt;：他大概已经有想法了，去找他吧。谨记保密。&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录开始, 时间12.17 0030 CST&amp;gt;&lt;br&gt;&amp;lt;探员StarryCocoon接受联络请求&amp;gt;&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：话说[数据删除]是全天有空的么&lt;br&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;表示同意&amp;gt;&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：明天或者后天？反正也就一天的事&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：后天吧，明天晚上刚好和一个港中深的同学有约来着w&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：周三晚上？&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：啊呸，周二。&lt;br&gt;&amp;lt;此处出现了时间观念误会，在此说明。事后&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;表示：可还行。&amp;gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：有上山么？&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：不用啊&lt;br&gt;&amp;lt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;向&lt;strong&gt;探员CamberOvO&lt;/strong&gt;展示了行动规划，&amp;gt;&lt;br&gt;&amp;lt;数据读取失败，需要4/2154级权限。&amp;gt;&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：我周二清一下五和坂田那边，如果能起的了床的话。&lt;br&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;表示一头雾水。&amp;gt;&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：反正您老只要周三或者周四跟我去西丽湖那边就完事。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：dalao这几天没课是么？&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：这几天闲的很&lt;br&gt;&amp;lt;由于未知原因，&lt;strong&gt;探员CamberOvO&lt;/strong&gt;和&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;开始讨论关于垃圾的话题。双方对两人都是垃圾达成共识。ADA将介入调查。详细数据需要4/2154级权限访问。&amp;gt;  &lt;/p&gt;
+&lt;p&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;表示网络有点卡&amp;gt;&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：&amp;lt;调侃语气&amp;gt;如果你在猩猩机房旁边会这样吗（被打&lt;br&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;成功加载地图&amp;gt;&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：woc，我记错了，是哈工深，明天就在那边了。&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：我不保证清完www&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：那边有活跃绿军么？感觉我清了然后周三行动的话，很好挡住啊。&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：[数据删除]和他老婆。清完就直接连上了还等周三干嘛。&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：&amp;lt;表示赞同&amp;gt;那白天再说了我困了。&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;br&gt;&amp;lt;检测到额外记录，正在加载。–ADA&amp;gt;&lt;br&gt;&amp;lt;出于权限影响，额外记录将加载到另一篇文档。–ADA&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;0x03-12-17-Blackray&#34;&gt;&lt;a href=&#34;#0x03-12-17-Blackray&#34; class=&#34;headerlink&#34; title=&#34;0x03 12.17/Blackray&#34;&gt;&lt;/a&gt;0x03 12.17/Blackray&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;你以为他鸽了，他没鸽，也是一种鸽。–CamberOvO&lt;br&gt;那好，我不来了。–StarryCocoon&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;嗯，美好的一觉，起床12点了。没有咕咕，真好。&lt;br&gt;和&lt;font color=blue&gt;@StarryCocoon&lt;/font&gt;联系了一下，发现他也刚起床。真就同为垃圾。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录开始，时间12.17 1330 CST&amp;gt;&lt;br&gt;&amp;lt;探员StarryCocoon接受联络请求&amp;gt;&lt;br&gt;[已编辑]&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：上地铁了，等下转五号线去大学城。&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：我可能下午才去西丽湖那边&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：所以现在是中午？&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：差不多，反正三四点才过去那边。还在等巨佬清block。  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然后本蒟蒻在地铁上发现了友军把block清除了&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：我叫的。&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：Julao牛逼。&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：清障那个才是巨佬。&lt;del&gt;其实本来以为要鸽掉的&lt;/del&gt;&lt;br&gt;&amp;lt;来自ADA的解释：对[数据删除]探员使用了模因Resistance-AntiPigeon”咕咕天敌”。&amp;gt;&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：你以为他要鸽了 他没鸽 也是一种鸽&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：那好，我不来了。（确信&lt;br&gt;&amp;lt;侦测到咕咕情景。已对&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;使用模因Resistance-AntiPigeon”咕咕天敌” –ADA&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;和友人A会面后，先由友人A带路去维也纳酒店…后面的小庙清了下新的Block。拍照。&lt;br&gt;(友人A：(笑)这啥？你游神秘仪式？)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录已读取 –ADA&amp;gt;&lt;br&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D1&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：&amp;lt;图片:方氏宗祠&amp;gt;，等下清下这个po，又射回去了。&lt;br&gt;&amp;lt;30分钟后&amp;gt;&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：毒了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然后是在等s佬过来时，和友人A逛了逛HITSZ,THUSZ,PKUSZ等本有害垃圾考不上的学校，稍微摸了下Po，清了下障。  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录已读取 –ADA&amp;gt;&lt;br&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D2&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：&amp;lt;图片:大学城图书馆&amp;gt; 配合下打这个po。&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：尬了，走过了，在THU。问题不大，走回去。&lt;br&gt;&amp;lt;10分钟后&amp;gt;&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：到了，打吗？&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：等下&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：算了，打吧&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：确定吗？&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：还是等下吧。&lt;br&gt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;：噗。&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：打吧。&lt;br&gt;&amp;lt;以上对话发生在一分钟内。重新评估即将进行。 –ADA&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;于1530左右与友人A成功在野生动物园与&lt;font color=blue&gt;@StarryCocoon&lt;/font&gt;会和。换卡。拍照。 &amp;gt; &amp;lt;记录已读取 –ADA&amp;gt;   &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D3&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(友人A: 嗯。神秘仪式。我懂了。)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：人呢&lt;br&gt;&amp;lt;&lt;strong&gt;探员CamberOvO&lt;/strong&gt;定位飘了&amp;gt;&lt;br&gt;&lt;strong&gt;探员StarryCocoon&lt;/strong&gt;：50回收手机&lt;br&gt;&amp;lt;记录结束&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;1535，行动开始。&lt;br&gt;一层50w，人均7层。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;获得的勋章：Mind Controller Black –ADA&amp;gt;&lt;br&gt;&amp;lt;记录已读取 –ADA&amp;gt;&lt;br&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D4&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;后来三个人漫步大学城，谈论了GCP(老版Scanner)和AWS(新版Prime)。&lt;br&gt;（然鹅DNS仍然显示猩猩用的GCP。。。这啥情况）&lt;br&gt;晚上在大学城附近和&lt;font color=blue&gt;@StarryCocoon&lt;/font&gt;与友人A开了个饭，就溜了。  &lt;/p&gt;
+&lt;p&gt;行动结束。从规划到实行共耗时16小时。&lt;/p&gt;
+&lt;p&gt;当天晚些时候，有幸面基司机&lt;font color=blue&gt;@TabrisJ&lt;/font&gt;并且换了卡。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录读取失败：读取数据需要4/4942权限。 –ADA&amp;gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;事后和这些卡片合了影。  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录已读取 –ADA&amp;gt;&lt;br&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D5&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;0x04-12-18-12-19-后记&#34;&gt;&lt;a href=&#34;#0x04-12-18-12-19-后记&#34; class=&#34;headerlink&#34; title=&#34;0x04 12.18/12.19/后记&#34;&gt;&lt;/a&gt;0x04 12.18/12.19/后记&lt;/h2&gt;&lt;p&gt;盖的当天就被司机&lt;font color=blue&gt;@TabrisJ&lt;/font&gt;毒了，求本咸鱼的心理阴影面积  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;ADA：正在计算&amp;gt;&lt;br&gt;&amp;lt;ADA：结论 &lt;strong&gt;探员CamberOvO&lt;/strong&gt; 的心理阴影面积为 3.5 Million MU&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;ADA：警告，侦测到第四面墙的意外穿透。已记录此次意外&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(这也能吐槽自己啊。。。)&lt;br&gt;总之，我和&lt;font color=blue&gt;@StarryCocoon&lt;/font&gt;上榜了。。。还上了Reddit r/ingress Trend。&lt;br&gt;司机&lt;font color=blue&gt;@TabrisJ&lt;/font&gt;因为要帮另一个友军搞牌子所以毒了顶点。愿友军也能够成功开黑牌。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;检测到额外记录，正在加载。–ADA&amp;gt;&lt;br&gt;&amp;lt;出于权限影响，额外记录将加载到另一篇文档。–ADA&amp;gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;深圳北站是个好地方。本废物在这成功刷了，12排任务。可喜可贺。&lt;br&gt;后来又去了西乡和老街，成功搞到了SpecOPS白金牌子。可喜可贺。&lt;del&gt;现在就卡AP了。&lt;/del&gt;  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;记录已读取 –ADA&amp;gt;&lt;br&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D6&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;检测到额外记录，正在加载。–ADA&amp;gt;&lt;br&gt;&amp;lt;出于权限影响，额外记录将加载到另一篇文档。–ADA&amp;gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;0x05-Credit&#34;&gt;&lt;a href=&#34;#0x05-Credit&#34; class=&#34;headerlink&#34; title=&#34;0x05 Credit&#34;&gt;&lt;/a&gt;0x05 Credit&lt;/h2&gt;&lt;p&gt;由&lt;del&gt;探员&lt;/del&gt; 本咸鱼&lt;font color=blue&gt;@CamberOvO&lt;/font&gt;倾情呈现&lt;br&gt;探员&lt;font color=blue&gt;@StarryCocoon @TabrisJ&lt;/font&gt; 以及 某不知名的友人A&lt;br&gt;提供大力支持。  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;ADA: 是否向友人A发送邀请邮件？&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;唔，我早前以社工游戏名义邀请过。对方表示感兴趣，然后不玩。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;ADA: 了解。&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/</guid>
+            <title>咕咕咕后的下一次更新</title>
+            <link>https://camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/</link>
+            <category>咕咕咕, 想不出来, 随笔</category>
+            <pubDate>Tue, 02 Apr 2019 03:16:54 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;总之，&lt;a href=&#34;https://gplt.patest.cn&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GPLT&lt;/a&gt;打完了&lt;br&gt;&lt;img src=&#34;/images/GPLT.jpg&#34; alt=&#34;image&#34;&gt;  &lt;/p&gt;
+&lt;p&gt;也该考虑下博客更新什么的了&lt;br&gt;你懒本质上还是一个咸鱼，主题搞好了，先咸着了&lt;/p&gt;
+&lt;p&gt;然后是随笔: &lt;/p&gt;
+&lt;p&gt;下次装ArchLinux的时候 一定要注意 &lt;code&gt;systemctl enable NetworkManager.service&lt;/code&gt; 的大小写&lt;br&gt;(MD这东西居然大小写敏感我的天)&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://camber.moe/2019/hello-world/</guid>
+            <title>Hello World</title>
+            <link>https://camber.moe/2019/hello-world/</link>
+            <pubDate>Sat, 30 Mar 2019 01:14:07 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ hexo new &amp;quot;My New Post&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Run-server&#34;&gt;&lt;a href=&#34;#Run-server&#34; class=&#34;headerlink&#34; title=&#34;Run server&#34;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ hexo server&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Generate-static-files&#34;&gt;&lt;a href=&#34;#Generate-static-files&#34; class=&#34;headerlink&#34; title=&#34;Generate static files&#34;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ hexo generate&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;&lt;a href=&#34;#Deploy-to-remote-sites&#34; class=&#34;headerlink&#34; title=&#34;Deploy to remote sites&#34;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ hexo deploy&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/deployment.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://camber.moe/2019/memo-Searching/</guid>
+            <title>&lt;待整理&gt;关于搜索的笔记</title>
+            <link>https://camber.moe/2019/memo-Searching/</link>
+            <category>Algorithm</category>
+            <category>RAW</category>
+            <category>Memo</category>
+            <category>Searching</category>
+            <pubDate>Sun, 03 Feb 2019 01:50:35 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;XDU-ICPC-搜索Ex-ppt-Memo-Rawα-w-vjudge-2&#34;&gt;&lt;a href=&#34;#XDU-ICPC-搜索Ex-ppt-Memo-Rawα-w-vjudge-2&#34; class=&#34;headerlink&#34; title=&#34;XDU_ICPC /搜索Ex.ppt / Memo Rawα /w vjudge_2&#34;&gt;&lt;/a&gt;XDU_ICPC /搜索Ex.ppt / Memo Rawα &lt;br&gt;/w vjudge_2&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;待整理，或许就不整理了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;概述&#34;&gt;&lt;a href=&#34;#概述&#34; class=&#34;headerlink&#34; title=&#34;概述&#34;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;特征明显，容易想出算法&lt;/li&gt;
+&lt;li&gt;代码量大，容易出错&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;状态空间与搜索树&#34;&gt;&lt;a href=&#34;#状态空间与搜索树&#34; class=&#34;headerlink&#34; title=&#34;状态空间与搜索树&#34;&gt;&lt;/a&gt;状态空间与搜索树&lt;/h2&gt;&lt;p&gt;&amp;lt;Todo&amp;gt;&lt;/p&gt;
+&lt;p&gt;(这个去看XuzhouICPC Memo Day8)(还没写)&lt;/p&gt;
+&lt;h3 id=&#34;优化&#34;&gt;&lt;a href=&#34;#优化&#34; class=&#34;headerlink&#34; title=&#34;优化&#34;&gt;&lt;/a&gt;优化&lt;/h3&gt;&lt;p&gt;状态空间角度: 去重&amp;amp;压缩&lt;br&gt;搜索树角度: 剪&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;*TODO*&lt;/strong&gt; 去看A*&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;博弈-搜索&#34;&gt;&lt;a href=&#34;#博弈-搜索&#34; class=&#34;headerlink&#34; title=&#34;博弈 + 搜索&#34;&gt;&lt;/a&gt;博弈 + 搜索&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;双人零和博弈  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;特点: &lt;strong&gt;双方&lt;/strong&gt;对抗，&lt;strong&gt;策略最优&lt;/strong&gt;&lt;br&gt;博弈过程&lt;strong&gt;交替&lt;/strong&gt;&lt;br&gt;零和: 结果必须为&lt;strong&gt;一方胜利另一方失败&lt;/strong&gt;/平局&lt;br&gt;完全信息: 双方都知道完整的状态&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;其中策略最优要满足: 自己获利最大 &amp;lt;-&amp;gt; 对方获利最小&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Minimax极大极小搜索(零和博弈)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由零和定义知，在A选择的回合，A想要获利最大，必须选择&lt;strong&gt;使B获利最小&lt;/strong&gt;的走法&lt;br&gt;轮到B，同理，B在自己的回合想要使自己的获利最大。双方交替进行   &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;del&gt;极大极小树的遍历时&lt;strong&gt;自底向上&lt;/strong&gt;的，就说怎么一直理解不能&lt;/del&gt;&lt;br&gt;最终会产出&lt;strong&gt;对于B&lt;/strong&gt;的最大/最小层交替出现的树&lt;br&gt;从PPT扒出来的图:  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%871.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在不加以剪枝的情况下，仍然需要遍历树的每一个节点 &lt;/p&gt;
+&lt;p&gt;Reference &amp;gt;&amp;gt;&amp;gt;(待补全)   &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;python&#34;&gt;def minimax():&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Reference &amp;gt;&amp;gt;&amp;gt; XDOJ 1405&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;α-β剪枝(Minimax)&lt;br&gt;&lt;strong&gt;一句话：对搜索过程中存在着不必要的状态，剪掉&lt;/strong&gt;  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%872.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;针对 &lt;strong&gt;“仍然需要遍历树的每一个节点”&lt;/strong&gt; 会出现许多不可能的情况，如选择了一个明显&lt;strong&gt;劣势&lt;/strong&gt;的位置(&lt;strong&gt;*劣势&lt;/strong&gt;需要实际定义&lt;em&gt;)&lt;br&gt;类似于A&lt;/em&gt; 将搜索时间放在更有希望的&lt;strong&gt;子树&lt;/strong&gt;上  &lt;/p&gt;
+&lt;p&gt;写法：在上述minimax搜索中传递一个α和β变量&lt;br&gt;其中α指max层得到的极大值，β指min层的极小值&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Negamax负极大值(零和博弈)&lt;br&gt;待补全&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;精确覆盖问题&#34;&gt;&lt;a href=&#34;#精确覆盖问题&#34; class=&#34;headerlink&#34; title=&#34;精确覆盖问题&#34;&gt;&lt;/a&gt;精确覆盖问题&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;精确覆盖&lt;br&gt;给定0-1稀疏矩阵，找出一个行集合，使其每列上总共有且只有一个1&lt;br&gt;&lt;img src=&#34;./%E5%9B%BE%E7%89%873.png&#34; alt=&#34;image&#34;&gt;&lt;/li&gt;
+&lt;li&gt;数独&lt;br&gt;暴力 暴力 暴力 &amp;amp; 精确覆盖的延申 &lt;/li&gt;
+&lt;li&gt;N皇后问题&lt;br&gt;回溯 回溯 回溯 &amp;amp; 简化版精确覆盖&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;精确覆盖的搜索&#34;&gt;&lt;a href=&#34;#精确覆盖的搜索&#34; class=&#34;headerlink&#34; title=&#34;精确覆盖的搜索&#34;&gt;&lt;/a&gt;精确覆盖的搜索&lt;/h3&gt;&lt;p&gt;是一个&lt;a href=&#34;./What-is-NPC.md&#34;&gt;NPC问题&lt;/a&gt;&amp;lt;-解释&lt;br&gt;暴力：针对有1的那一行的进行枚举&lt;/p&gt;
+&lt;h3 id=&#34;X算法&#34;&gt;&lt;a href=&#34;#X算法&#34; class=&#34;headerlink&#34; title=&#34;X算法&#34;&gt;&lt;/a&gt;X算法&lt;/h3&gt;&lt;p&gt;&lt;del&gt;哪里还能找到这么好理解的算法（（（&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;选择了某一行，就拿走(this + conflict(this))  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0 0 1 0 1 1 0     0 0 x 0 x x 0  
+1 0 0 1 0 0 1     1 0   1     1     1 0 1 1
+0 1 1 0 0 1 0  -&amp;gt; x              -&amp;gt; 1 0 1 0 -&amp;gt; ...
+1 0 0 1 0 0 0     1 0   1     0     0 1 0 1
+0 1 0 0 0 0 1     0 1   0     1
+0 0 0 1 1 0 1     x&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后继续搜索，回溯时加回&lt;/p&gt;
+&lt;p&gt;优点是减少了搜索规模&lt;br&gt;但是其他东西仍然不尽人意&lt;/p&gt;
+&lt;h3 id=&#34;DancingLinks-X-舞蹈链-a-k-a-DLX-gt-对X-Algorithm的优化&#34;&gt;&lt;a href=&#34;#DancingLinks-X-舞蹈链-a-k-a-DLX-gt-对X-Algorithm的优化&#34; class=&#34;headerlink&#34; title=&#34;DancingLinks X 舞蹈链(a.k.a. DLX) -&amp;gt; 对X Algorithm的优化&#34;&gt;&lt;/a&gt;DancingLinks X 舞蹈链(a.k.a. DLX) -&amp;gt; 对X Algorithm的优化&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;./%E5%9B%BE%E7%89%874.png&#34; alt=&#34;image&#34;&gt;&lt;br&gt;如上图，利用链表 快速查找1的位置 &amp;amp;&amp;amp; 快速删除、插入&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;在ppt里提到的一种数据结构, 由于懒就不写推导过程了&lt;/del&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.cnblogs.com/grenet/p/3145800.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reference&lt;/a&gt;&amp;gt;&amp;gt;&amp;gt;&lt;br&gt;Dancing Links的核心是基于双向链的方便操作（移除、恢复加入）(实现略)  &lt;/p&gt;
+&lt;p&gt;将链表的操作应用于 &lt;em&gt;X算法&lt;/em&gt; 中，即可得到DancingLinksX数据结构&lt;br&gt;利用链表添加删除O(1)的特点满足X算法的需求，而且矩阵中若1的个数很大，X算法+DLX可以极快的缩小搜索规模&lt;/p&gt;
+&lt;p&gt;特点: 每列有一个辅助节点，列节点首有一个head节点&lt;br&gt;节点保存 &lt;strong&gt;上下左右的指针&lt;/strong&gt; &amp;lt;- 核心&lt;/p&gt;
+&lt;p&gt;运行效率很高，理由：&lt;br&gt;链表的跳转次数取决于矩阵中1的个数&lt;br&gt;如果矩阵中1的个数很多，会被X算法迅速缩小到很小的规模   &lt;/p&gt;
+&lt;p&gt;请求裸题&amp;gt;&amp;gt;&amp;gt;&lt;/p&gt;
+&lt;p&gt;End&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://camber.moe/2019/memo-day5-RAW/</guid>
+            <title>memo.day5.RAW</title>
+            <link>https://camber.moe/2019/memo-day5-RAW/</link>
+            <category>Mo-Yu</category>
+            <pubDate>Mon, 28 Jan 2019 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;// C++大法好，我选择Python&lt;br&gt;// D.R.G. == Delete Rayark Games&lt;br&gt;没错我说的就是Cytus II &lt;/p&gt;
+&lt;p&gt;Index:&lt;br&gt;数论&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;素数&lt;/li&gt;
+&lt;li&gt;欧几里得&lt;/li&gt;
+&lt;li&gt;同余&lt;/li&gt;
+&lt;li&gt;积性函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Day5-6-数论基础&#34;&gt;&lt;a href=&#34;#Day5-6-数论基础&#34; class=&#34;headerlink&#34; title=&#34;Day5/6 / 数论基础&#34;&gt;&lt;/a&gt;Day5/6 / 数论基础&lt;/h1&gt;&lt;h2 id=&#34;素数-筛法判断&#34;&gt;&lt;a href=&#34;#素数-筛法判断&#34; class=&#34;headerlink&#34; title=&#34;素数 - 筛法判断&#34;&gt;&lt;/a&gt;素数 - 筛法判断&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;埃拉托斯特尼筛法:  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;计算整数区间[2，n]中的所有素数的最为简便的筛法&lt;br&gt;预处理时间复杂度为O(n * log log n) 空间复杂度为O(n)&lt;br&gt;合数是作为素数的倍数被筛去  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;欧拉筛法:&lt;br&gt;&lt;del&gt;(事实上都写的这个)略&lt;/del&gt;代码&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;py3&#34;&gt;# Prime Generator with Euler.
+notPrime = [False]*1000005
+Prime = []
+for i in range(2,1000005):
+ if not notPrime[i]: Prime.append(i)
+ for ii in Prime:
+     if ii == 1: continue
+     if i * ii &amp;gt; 1000000: break
+     notPrime[i*ii] = True
+     if i % ii == 0: break&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;概括: 欧拉的原理是遍历+乘&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;和素数筛相关的&lt;strong&gt;不要使用Python(cPython)&lt;/strong&gt;，会T的飞起，尤其是ZOJ&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;Goldbach-Conjecture&#34;&gt;&lt;a href=&#34;#Goldbach-Conjecture&#34; class=&#34;headerlink&#34; title=&#34;Goldbach Conjecture&#34;&gt;&lt;/a&gt;Goldbach Conjecture&lt;/h3&gt;&lt;p&gt;(Link)[localhost]&lt;br&gt;[-] &lt;del&gt;待做题&lt;/del&gt; 换OJ过了&lt;br&gt;Python 不适合数据量大的题&lt;br&gt;&lt;del&gt;你妈的 为什么&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;题面:  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每个大于4的偶数可以写成两个奇素数的和。&lt;br&gt;例如：8=3+5，3和5都是奇素数；而20=3+17=7+13；42=5+37=11+31=13+29=19+23。&lt;br&gt;现在哥德巴赫猜想仍然没有被证明是否正确。现在请您证明对所有小于一百万的偶数，哥德巴赫猜想成立  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;dl&gt;&lt;dt&gt;做法&lt;br&gt;: 预处理 1 - 数据范围 的素数 存入数组&lt;/dt&gt;&lt;dd&gt;遍历查询是否都为素数&lt;/dd&gt;&lt;/dl&gt;&lt;h3 id=&#34;Summation-of-Four-Primes&#34;&gt;&lt;a href=&#34;#Summation-of-Four-Primes&#34; class=&#34;headerlink&#34; title=&#34;Summation of Four Primes&#34;&gt;&lt;/a&gt;Summation of Four Primes&lt;/h3&gt;&lt;blockquote&gt;
+&lt;dl&gt;&lt;dt&gt;每个数字是否可以表示成4个素数的总和&lt;br&gt;[-] Accepted /w c++&lt;br&gt;[-] Summarize&lt;br&gt;[ ] Summarize&lt;br&gt;分析&lt;/dt&gt;&lt;dd&gt;哥德巴赫猜想的拓展  &lt;/dd&gt;&lt;/dl&gt;&lt;/blockquote&gt;
+&lt;dl&gt;&lt;dt&gt;做法&lt;br&gt;: (类比于哥德巴赫猜想)预处理&lt;/dt&gt;&lt;dd&gt;遍历查询&lt;/dd&gt;&lt;/dl&gt;&lt;h3 id=&#34;Digit-Prime&#34;&gt;&lt;a href=&#34;#Digit-Prime&#34; class=&#34;headerlink&#34; title=&#34;Digit Prime&#34;&gt;&lt;/a&gt;Digit Prime&lt;/h3&gt;&lt;p&gt;[-] 所以Python会T飞 &amp;amp;&amp;amp; C++ AC&lt;br&gt;欧拉&lt;del&gt;欧拉欧拉欧拉欧拉欧拉欧拉&lt;/del&gt; &lt;del&gt;(唐突JoJo)&lt;/del&gt;&lt;br&gt;+ 多离线处理一次&lt;/p&gt;
+&lt;h2 id=&#34;素数-试除法与Miller-Rabin法-同余&#34;&gt;&lt;a href=&#34;#素数-试除法与Miller-Rabin法-同余&#34; class=&#34;headerlink&#34; title=&#34;素数 - 试除法与Miller-Rabin法(同余)&#34;&gt;&lt;/a&gt;素数 - 试除法与Miller-Rabin法(同余)&lt;/h2&gt;&lt;p&gt;[ ]待补全&lt;/p&gt;
+&lt;h3 id=&#34;Miller-Rabin&#34;&gt;&lt;a href=&#34;#Miller-Rabin&#34; class=&#34;headerlink&#34; title=&#34;Miller-Rabin&#34;&gt;&lt;/a&gt;Miller-Rabin&lt;/h3&gt;&lt;p&gt;[ ]待补全&lt;/p&gt;
+&lt;h3 id=&#34;PrimeSeq&#34;&gt;&lt;a href=&#34;#PrimeSeq&#34; class=&#34;headerlink&#34; title=&#34;PrimeSeq&#34;&gt;&lt;/a&gt;PrimeSeq&lt;/h3&gt;&lt;p&gt;[ ]待写题&lt;/p&gt;
+&lt;h2 id=&#34;不定方程和同余方程&#34;&gt;&lt;a href=&#34;#不定方程和同余方程&#34; class=&#34;headerlink&#34; title=&#34;不定方程和同余方程&#34;&gt;&lt;/a&gt;不定方程和同余方程&lt;/h2&gt;&lt;h3 id=&#34;Background&#34;&gt;&lt;a href=&#34;#Background&#34; class=&#34;headerlink&#34; title=&#34;Background&#34;&gt;&lt;/a&gt;Background&lt;/h3&gt;&lt;blockquote&gt;
+&lt;dl&gt;&lt;dt&gt;线性组合: 如果a和b都是整数，则ax+by是a和b的线性组合，其中数x和y是整数&lt;br&gt;定理&lt;br&gt;: 如果a和b都是整数，且a和b不全为0&lt;/dt&gt;&lt;dd&gt;则GCD(a, b) 是a和b的线性组合中最小正整数。&lt;/dd&gt;&lt;/dl&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;最大公约数和不定方程&#34;&gt;&lt;a href=&#34;#最大公约数和不定方程&#34; class=&#34;headerlink&#34; title=&#34;最大公约数和不定方程&#34;&gt;&lt;/a&gt;最大公约数和不定方程&lt;/h3&gt;&lt;p&gt;####GCD()&lt;br&gt;代码:  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;py3&#34;&gt;def gcd(a,b):
+    return b if a == 0 else gcd(b%a,a)
+    # a if b == 0 else gcd(b,a%b)&lt;/code&gt;&lt;/pre&gt;
+&lt;dl&gt;&lt;dt&gt;证明&lt;/dt&gt;&lt;dd&gt;&lt;strong&gt;关键&lt;/strong&gt; 证明&lt;code&gt;gcd(a,b)&lt;/code&gt;与&lt;code&gt;gcd(b%a,a)&lt;/code&gt;可互相整除  &lt;/dd&gt;&lt;/dl&gt;&lt;h4 id=&#34;Happy-2006&#34;&gt;&lt;a href=&#34;#Happy-2006&#34; class=&#34;headerlink&#34; title=&#34;Happy 2006&#34;&gt;&lt;/a&gt;Happy 2006&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;如果两个正整数的GCD是1，则称这两个正整数是互素的&lt;br&gt;要求: 对于给出的整数m，找到按升序排列的第K个和m互素的整数&lt;br&gt;[ ] 待补完&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;理解:&lt;br&gt;本题互质分两类: 小于m的和大于m的&lt;br&gt;由题解，对其分析&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1,3,...,n-1
+n+1,n+3,...n-1+n
+2n+1,2n+3,...,n-1+2n
+...&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;以此类推，可知其具有周期性&lt;br&gt;+  考虑%==0关系 &amp;lt;-&amp;gt; 坑&lt;/p&gt;
+&lt;h4 id=&#34;exGCD&#34;&gt;&lt;a href=&#34;#exGCD&#34; class=&#34;headerlink&#34; title=&#34;exGCD()&#34;&gt;&lt;/a&gt;exGCD()&lt;/h4&gt;&lt;p&gt;[ ]待补完&lt;br&gt;[ ]模逆元&lt;/p&gt;
+&lt;p&gt;代码 / Reference 数论的编程实验.pptx p34&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;Python&#34;&gt;# Note 模运算的结果一定比双方都小
+# 计算量小可以使用python交题
+def ext_euclid(a, b):
+     if b == 0: return 1, 0, a  #
+     else: 
+         x, y, q = ext_euclid(b, a % b) # q = gcd(a, b) = gcd(b, a%b)
+         # x, y 表示原线性方程的整根
+         # 直到递归到达底层前都不会被处理
+         x, y = y, (x - (a // b) * y)
+         # 
+         return x, y, q&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;定理:   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;定义: 如果a和b都是整数，则ax+by是a和b的&lt;em&gt;线性组合&lt;em&gt;，其中数x和y是整数&lt;br&gt;定理: 如果a和b都是整数，且a和b不全为0，则GCD(a, b) 是a和b的&lt;/em&gt;线性组合中最小正整数&lt;/em&gt;&lt;br&gt;::即对于ax+by, gcd(a,b)为上式最小值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Bezout定理&lt;/strong&gt;: 如果a和b都是整数，则有整数x和y使得ax+by= GCD(a, b)&lt;br&gt;&lt;strong&gt;推论&lt;/strong&gt;: 整数a和b互素当且仅当存在整数x和y使得ax+by=1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;模逆元:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;定理: 对ax+by=c,设a, b和c都是整数&lt;br&gt;如果c不是GCD(a, b)的倍数，则不定方程ax+by=c没有整数解&lt;br&gt;如果c是GCD(a, b)的倍数，则不定方程ax+by=c有&lt;strong&gt;无穷多&lt;/strong&gt;整数解  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;接上: 如果(x0, y0)是ax+by=c的一个整数解&lt;br&gt;则ax+by=c的所有整数解是x= x0+ k *(b // GCD(a, b))，y= y0-k *(a // GCD(a, b))，其中k是整数&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;应用/摘抄:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;给出ax+by=c 其中a，b和c是整数常量，x和y是整数变量&lt;br&gt;要求计算方程的整数根(x, y)&lt;br&gt;对于不定方程ax+by=c，如果c不是GCD(a, b)的倍数，则不定方程无解&lt;br&gt;否则扩展的欧几里得算法用于求解。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;理解: &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在求线性组合ax+by，找a,b的公约数时, 找符合条件的c  &lt;/li&gt;
+&lt;li&gt;对方程 ax+by = gcd(a, b)&lt;br&gt;exgcd可以用于求解不定方程的&lt;del&gt;最小&lt;/del&gt;整数解 or 判断是否有整数解&lt;br&gt;[-]&lt;del&gt;有且只有一个？&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;The-equation&#34;&gt;&lt;a href=&#34;#The-equation&#34; class=&#34;headerlink&#34; title=&#34;The equation&#34;&gt;&lt;/a&gt;The equation&lt;/h5&gt;&lt;p&gt;[ ] 不想写，没OJ&lt;/p&gt;
+&lt;h3 id=&#34;同余方程和同余方程组&#34;&gt;&lt;a href=&#34;#同余方程和同余方程组&#34; class=&#34;headerlink&#34; title=&#34;同余方程和同余方程组&#34;&gt;&lt;/a&gt;同余方程和同余方程组&lt;/h3&gt;&lt;h4 id=&#34;同余&#34;&gt;&lt;a href=&#34;#同余&#34; class=&#34;headerlink&#34; title=&#34;同余&#34;&gt;&lt;/a&gt;同余&lt;/h4&gt;&lt;p&gt;定义1:  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;给出一个正整数m和两个整数a和b&lt;br&gt;如果((a-b) %m)=0，则称a和b模m&lt;strong&gt;同余&lt;/strong&gt;，记为a≡b(%m)。&lt;br&gt;如果((a-b) %m)!=0，则称a模m不同余于b。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;定理:  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;定理3.2.2.1.&lt;/strong&gt; 给出一个正整数m和两个整数a和b，((a-b) % m)=0当且仅当(iff)存在整数k,a=b+km&lt;br&gt;2. 在一个同余式两边同时做加法、减法或乘法，依然保持同余&lt;br&gt;3. 给出一个正整数m和三个整数a, b和c，a≡b(mod m), 则: a+c≡b+c (mod m); a-c≡b-c (mod m);  ac≡bc (mod m)&lt;br&gt;4. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;由上可得出mod法规则:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;(a+b)% p= (a%p+b%p)%p &amp;lt;1&amp;gt;&lt;br&gt;(a–b)% p= (a%p–b%p)%p &amp;lt;2&amp;gt;&lt;br&gt;(a*b)% p= (a%p*b%p)%p &amp;lt;3&amp;gt;&lt;br&gt;(a^b)% p= ((a &lt;strong&gt;%p&lt;/strong&gt;)^b)%p &amp;lt;4&amp;gt;&lt;br&gt;((a+b)%p+c)%p=(a+(b+c)%p)%p  &amp;lt;5&amp;gt;&lt;br&gt;((ab)%p*c)%p=(a*(bc)%p)%p &amp;lt;6&amp;gt;&lt;br&gt;交换律&amp;lt;7/8&amp;gt;&lt;br&gt;((a +b)% p * c) % p = ((a * c) % p + (b * c) % p) % p &amp;lt;9&amp;gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;Raising-Modulo-Numbers-破OJ-1995&#34;&gt;&lt;a href=&#34;#Raising-Modulo-Numbers-破OJ-1995&#34; class=&#34;headerlink&#34; title=&#34;Raising Modulo Numbers / 破OJ 1995&#34;&gt;&lt;/a&gt;Raising Modulo Numbers / 破OJ 1995&lt;/h5&gt;&lt;blockquote&gt;
+&lt;p&gt;题意: 给出n对数字$A_i$和$B_i$; 以及一个整数M&lt;br&gt;求解: $(A1^B1+A2^B2+…+An^Bn) mod M$&lt;br&gt;输入: Z个测试用例 ,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;[ ]题解待写&lt;br&gt;[ ]光靠这题还是搞不懂同余的作用(模法除外)&lt;br&gt;[-]Accepted&lt;/p&gt;
+&lt;h4 id=&#34;一元线性同余方程&#34;&gt;&lt;a href=&#34;#一元线性同余方程&#34; class=&#34;headerlink&#34; title=&#34;一元线性同余方程&#34;&gt;&lt;/a&gt;一元线性同余方程&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;定义3.2.2.2 形如ax≡b(mod m)的&lt;em&gt;同余式&lt;/em&gt;被称为&lt;strong&gt;一元线性同余方程，&lt;/strong&gt;&lt;br&gt;其中a和b是整数，m是正整数，x未知整数  &lt;/p&gt;
+&lt;p&gt;定理3.2.2.4 &amp;lt;!关于解&amp;gt; 对关于x的&lt;strong&gt;一元线性同余方程&lt;/strong&gt;&lt;code&gt;ax≡b(mod m)&lt;/code&gt;&lt;br&gt;设a和b是整数，m是正整数，且&lt;code&gt;GCD(a, m)==d&lt;/code&gt;&lt;br&gt;如果&lt;code&gt;b mod d != 0&lt;/code&gt;，则ax≡b(mod m)无解&lt;br&gt;如果&lt;code&gt;b mod d == 0&lt;/code&gt;，则ax≡b(mod m)恰有&lt;strong&gt;d个模m不同余&lt;/strong&gt;的解。  &lt;/p&gt;
+&lt;p&gt;推论3.2.2.3 如果GCD(a, m)=1，则一次同余式ax+b≡0(mod m)有解   &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由定理 3.2.2.4，对于一元线性同余方程ax≡b(mod m)，计算x的算法如下&lt;br&gt;步骤1：应用&lt;strong&gt;欧几里得算法和扩展的欧几里得算法&lt;/strong&gt;分别计算d=GCD(a, m)和d=ax’+my’的解(x’, y’)，其中x’是ax’≡d(mod m)的解   &amp;lt;= gcd(a,m)=ax’+my’&lt;br&gt;步骤2：如果b mod d!=0，则ax≡b(mod m)无解；&lt;br&gt;否则存在d个模m不同余的解，其中第一个解$x0=x’*(b DIV d) mod m$&lt;br&gt;其余的d-1解是$xi=(x0+i*(m DIV d)) mod m，1≤i≤d-1$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;C-Looooooooooooops&#34;&gt;&lt;a href=&#34;#C-Looooooooooooops&#34; class=&#34;headerlink&#34; title=&#34;C Looooooooooooops&#34;&gt;&lt;/a&gt;C Looooooooooooops&lt;/h5&gt;&lt;p&gt;&lt;strong&gt;有关同余关系的实验&lt;/strong&gt;&lt;br&gt;题面: POJ 2115  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;给出了一个C语言风格类型的循环：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;c&#34;&gt;for(variable = A; variable != B; variable += C)
+      statement;&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;即一个循环(中略)我们要知道语句执行多少次，本题设定所有的算术运算都是在以2k为模的k位无符号整数类型（值0 ≤ x&amp;lt;2k）上进行。  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;[ ]同余关系 理解不能&lt;/p&gt;
+&lt;h4 id=&#34;同余方程组&#34;&gt;&lt;a href=&#34;#同余方程组&#34; class=&#34;headerlink&#34; title=&#34;同余方程组&#34;&gt;&lt;/a&gt;同余方程组&lt;/h4&gt;&lt;p&gt;中国剩余定理&lt;/p&gt;
+&lt;h3 id=&#34;特殊的同余式&#34;&gt;&lt;a href=&#34;#特殊的同余式&#34; class=&#34;headerlink&#34; title=&#34;特殊的同余式&#34;&gt;&lt;/a&gt;特殊的同余式&lt;/h3&gt;&lt;h4 id=&#34;威尔逊定理和费马小定理&#34;&gt;&lt;a href=&#34;#威尔逊定理和费马小定理&#34; class=&#34;headerlink&#34; title=&#34;威尔逊定理和费马小定理&#34;&gt;&lt;/a&gt;威尔逊定理和费马小定理&lt;/h4&gt;&lt;p&gt;引理1:  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;p是素数，正整数a是其自身模p的逆当且仅当a≡1(mod p)或a≡-1(mod p)&lt;br&gt;[ ]证明 待补全&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;威尔逊定理&lt;/strong&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果p是素数，则(p-1)!≡-1(mod p)&lt;br&gt;== 若p为质数，则p可整除(p-1)!+1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;YAPTCHA&#34;&gt;&lt;a href=&#34;#YAPTCHA&#34; class=&#34;headerlink&#34; title=&#34;YAPTCHA&#34;&gt;&lt;/a&gt;YAPTCHA&lt;/h4&gt;&lt;p&gt;// 原题解析有问题&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;费马小定理&lt;/strong&gt;  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果p是素数，a是正整数，且GCD(a, p)=1，则a^(p-1)≡1 (mod p)&lt;br&gt;==&amp;gt;若p为质数&amp;amp;&amp;amp;a,b互质, 则p可整除&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;What-day-is-that-day&#34;&gt;&lt;a href=&#34;#What-day-is-that-day&#34; class=&#34;headerlink&#34; title=&#34;What day is that day&#34;&gt;&lt;/a&gt;What day is that day&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;伪素数&lt;/strong&gt; &lt;/p&gt;
+&lt;h4 id=&#34;欧拉定理-P106&#34;&gt;&lt;a href=&#34;#欧拉定理-P106&#34; class=&#34;headerlink&#34; title=&#34;欧拉定理 / P106&#34;&gt;&lt;/a&gt;欧拉定理 / P106&lt;/h4&gt;&lt;p&gt;定义3.3.3.1: 设n是一个正整数。&lt;strong&gt;欧拉𝜑函数$𝜑(n)$&lt;/strong&gt;是不超过n且与n互素的正整数的个数&lt;br&gt;定义3.3.3.2: &lt;em&gt;模n&lt;/em&gt;的&lt;strong&gt;既约剩余系&lt;/strong&gt;是由$𝜑(𝑛)$个整数构成的集合，集合中的&lt;em&gt;每个元素均与n*&lt;/em&gt;互素***，且任何两个元素模n不同余。&lt;br&gt;理解: &lt;/p&gt;
+&lt;p&gt;定理3.3.1: pass&lt;br&gt;定理3.3.5/欧拉定理: 若n和a互素且为正整数，则$a^(𝜑(𝑛))≡1(mod n)$&lt;br&gt;推论3.3.1: 若n和a互素且为正整数，则$a^(𝜑(𝑛)+1)≡a(mod n)$&lt;/p&gt;
+&lt;h2 id=&#34;积性函数&#34;&gt;&lt;a href=&#34;#积性函数&#34; class=&#34;headerlink&#34; title=&#34;积性函数&#34;&gt;&lt;/a&gt;积性函数&lt;/h2&gt;&lt;h3 id=&#34;欧拉函数&#34;&gt;&lt;a href=&#34;#欧拉函数&#34; class=&#34;headerlink&#34; title=&#34;欧拉函数&#34;&gt;&lt;/a&gt;欧拉函数&lt;/h3&gt;&lt;p&gt;定义3.4.1/算术函数: 所有在正整数上运算的函数都被称为算术函数&lt;br&gt;定义3.4.2/积性函数:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果算术函数f对任意两个互素的正整数a和b，f(𝑎𝑏)=𝑓(𝑎)𝑓(𝑏)，则f被称为&lt;strong&gt;积性函数（或乘性函数）&lt;/strong&gt;&lt;br&gt;如果对任意两个正整数a和b，f(𝑎𝑏)=𝑓(𝑎)𝑓(𝑏)，则f被称为&lt;strong&gt;完全积性函数（或完全乘性函数）&lt;/strong&gt;(和上面的不同是没有对&lt;strong&gt;互素&lt;/strong&gt;的要求)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;由上:&lt;br&gt;定理3.4.1 &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果f是一个积性函数, n是一个正整数, 且n有素幂因子分解n = (p_1)^(a_1)(p_2)^(a_2)…(p_m)^(a_m)&lt;br&gt;则f(n) = f((p_1)^(a_1))f((p_2)^(a_2))..f((p_m)^(a_m))  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;定义3.4.3 欧拉函数 见上 + 欧拉函数是一个积性函数&lt;br&gt;定理3.4.2 若a是素数 𝜑(𝑛)=n-1 否则𝜑(𝑛) &amp;lt; n-1&lt;br&gt;定理3.4.3 𝜑函数&lt;strong&gt;公式&lt;/strong&gt;: &lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;Relatives&#34;&gt;&lt;a href=&#34;#Relatives&#34; class=&#34;headerlink&#34; title=&#34;Relatives&#34;&gt;&lt;/a&gt;Relatives&lt;/h4&gt;&lt;h4 id=&#34;Primitive-Roots&#34;&gt;&lt;a href=&#34;#Primitive-Roots&#34; class=&#34;headerlink&#34; title=&#34;Primitive Roots&#34;&gt;&lt;/a&gt;Primitive Roots&lt;/h4&gt;&lt;h3 id=&#34;莫比乌斯&#34;&gt;&lt;a href=&#34;#莫比乌斯&#34; class=&#34;headerlink&#34; title=&#34;莫比乌斯&#34;&gt;&lt;/a&gt;莫比乌斯&lt;/h3&gt;&lt;h4 id=&#34;Sky-Code&#34;&gt;&lt;a href=&#34;#Sky-Code&#34; class=&#34;headerlink&#34; title=&#34;Sky Code&#34;&gt;&lt;/a&gt;Sky Code&lt;/h4&gt;&lt;p&gt;+容斥原理&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

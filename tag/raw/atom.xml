@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://camber.moe</id>
+    <title>Camber&#39;s Logistics | Archive • Posts by &#34;raw&#34; tag</title>
+    <link href="https://camber.moe" />
+    <updated>2019-02-02T17:50:35.000Z</updated>
+    <category term="Algorithm" />
+    <category term="RAW" />
+    <category term="Memo" />
+    <category term="Searching" />
+    <category term="Mo-Yu" />
+    <category term="咕咕咕, 想不出来, 随笔" />
+    <entry>
+        <id>https://camber.moe/2019/memo-Searching/</id>
+        <title>&lt;待整理&gt;关于搜索的笔记</title>
+        <link rel="alternate" href="https://camber.moe/2019/memo-Searching/"/>
+        <content type="html">&lt;h1 id=&#34;XDU-ICPC-搜索Ex-ppt-Memo-Rawα-w-vjudge-2&#34;&gt;&lt;a href=&#34;#XDU-ICPC-搜索Ex-ppt-Memo-Rawα-w-vjudge-2&#34; class=&#34;headerlink&#34; title=&#34;XDU_ICPC /搜索Ex.ppt / Memo Rawα /w vjudge_2&#34;&gt;&lt;/a&gt;XDU_ICPC /搜索Ex.ppt / Memo Rawα &lt;br&gt;/w vjudge_2&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;待整理，或许就不整理了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;概述&#34;&gt;&lt;a href=&#34;#概述&#34; class=&#34;headerlink&#34; title=&#34;概述&#34;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;特征明显，容易想出算法&lt;/li&gt;
+&lt;li&gt;代码量大，容易出错&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;状态空间与搜索树&#34;&gt;&lt;a href=&#34;#状态空间与搜索树&#34; class=&#34;headerlink&#34; title=&#34;状态空间与搜索树&#34;&gt;&lt;/a&gt;状态空间与搜索树&lt;/h2&gt;&lt;p&gt;&amp;lt;Todo&amp;gt;&lt;/p&gt;
+&lt;p&gt;(这个去看XuzhouICPC Memo Day8)(还没写)&lt;/p&gt;
+&lt;h3 id=&#34;优化&#34;&gt;&lt;a href=&#34;#优化&#34; class=&#34;headerlink&#34; title=&#34;优化&#34;&gt;&lt;/a&gt;优化&lt;/h3&gt;&lt;p&gt;状态空间角度: 去重&amp;amp;压缩&lt;br&gt;搜索树角度: 剪&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;*TODO*&lt;/strong&gt; 去看A*&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;博弈-搜索&#34;&gt;&lt;a href=&#34;#博弈-搜索&#34; class=&#34;headerlink&#34; title=&#34;博弈 + 搜索&#34;&gt;&lt;/a&gt;博弈 + 搜索&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;双人零和博弈  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;特点: &lt;strong&gt;双方&lt;/strong&gt;对抗，&lt;strong&gt;策略最优&lt;/strong&gt;&lt;br&gt;博弈过程&lt;strong&gt;交替&lt;/strong&gt;&lt;br&gt;零和: 结果必须为&lt;strong&gt;一方胜利另一方失败&lt;/strong&gt;/平局&lt;br&gt;完全信息: 双方都知道完整的状态&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;其中策略最优要满足: 自己获利最大 &amp;lt;-&amp;gt; 对方获利最小&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Minimax极大极小搜索(零和博弈)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由零和定义知，在A选择的回合，A想要获利最大，必须选择&lt;strong&gt;使B获利最小&lt;/strong&gt;的走法&lt;br&gt;轮到B，同理，B在自己的回合想要使自己的获利最大。双方交替进行   &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;del&gt;极大极小树的遍历时&lt;strong&gt;自底向上&lt;/strong&gt;的，就说怎么一直理解不能&lt;/del&gt;&lt;br&gt;最终会产出&lt;strong&gt;对于B&lt;/strong&gt;的最大/最小层交替出现的树&lt;br&gt;从PPT扒出来的图:  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%871.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在不加以剪枝的情况下，仍然需要遍历树的每一个节点 &lt;/p&gt;
+&lt;p&gt;Reference &amp;gt;&amp;gt;&amp;gt;(待补全)   &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;python&#34;&gt;def minimax():&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Reference &amp;gt;&amp;gt;&amp;gt; XDOJ 1405&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;α-β剪枝(Minimax)&lt;br&gt;&lt;strong&gt;一句话：对搜索过程中存在着不必要的状态，剪掉&lt;/strong&gt;  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;%E5%9B%BE%E7%89%872.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;针对 &lt;strong&gt;“仍然需要遍历树的每一个节点”&lt;/strong&gt; 会出现许多不可能的情况，如选择了一个明显&lt;strong&gt;劣势&lt;/strong&gt;的位置(&lt;strong&gt;*劣势&lt;/strong&gt;需要实际定义&lt;em&gt;)&lt;br&gt;类似于A&lt;/em&gt; 将搜索时间放在更有希望的&lt;strong&gt;子树&lt;/strong&gt;上  &lt;/p&gt;
+&lt;p&gt;写法：在上述minimax搜索中传递一个α和β变量&lt;br&gt;其中α指max层得到的极大值，β指min层的极小值&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Negamax负极大值(零和博弈)&lt;br&gt;待补全&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;精确覆盖问题&#34;&gt;&lt;a href=&#34;#精确覆盖问题&#34; class=&#34;headerlink&#34; title=&#34;精确覆盖问题&#34;&gt;&lt;/a&gt;精确覆盖问题&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;精确覆盖&lt;br&gt;给定0-1稀疏矩阵，找出一个行集合，使其每列上总共有且只有一个1&lt;br&gt;&lt;img src=&#34;./%E5%9B%BE%E7%89%873.png&#34; alt=&#34;image&#34;&gt;&lt;/li&gt;
+&lt;li&gt;数独&lt;br&gt;暴力 暴力 暴力 &amp;amp; 精确覆盖的延申 &lt;/li&gt;
+&lt;li&gt;N皇后问题&lt;br&gt;回溯 回溯 回溯 &amp;amp; 简化版精确覆盖&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;精确覆盖的搜索&#34;&gt;&lt;a href=&#34;#精确覆盖的搜索&#34; class=&#34;headerlink&#34; title=&#34;精确覆盖的搜索&#34;&gt;&lt;/a&gt;精确覆盖的搜索&lt;/h3&gt;&lt;p&gt;是一个&lt;a href=&#34;./What-is-NPC.md&#34;&gt;NPC问题&lt;/a&gt;&amp;lt;-解释&lt;br&gt;暴力：针对有1的那一行的进行枚举&lt;/p&gt;
+&lt;h3 id=&#34;X算法&#34;&gt;&lt;a href=&#34;#X算法&#34; class=&#34;headerlink&#34; title=&#34;X算法&#34;&gt;&lt;/a&gt;X算法&lt;/h3&gt;&lt;p&gt;&lt;del&gt;哪里还能找到这么好理解的算法（（（&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;选择了某一行，就拿走(this + conflict(this))  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0 0 1 0 1 1 0     0 0 x 0 x x 0  
+1 0 0 1 0 0 1     1 0   1     1     1 0 1 1
+0 1 1 0 0 1 0  -&amp;gt; x              -&amp;gt; 1 0 1 0 -&amp;gt; ...
+1 0 0 1 0 0 0     1 0   1     0     0 1 0 1
+0 1 0 0 0 0 1     0 1   0     1
+0 0 0 1 1 0 1     x&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后继续搜索，回溯时加回&lt;/p&gt;
+&lt;p&gt;优点是减少了搜索规模&lt;br&gt;但是其他东西仍然不尽人意&lt;/p&gt;
+&lt;h3 id=&#34;DancingLinks-X-舞蹈链-a-k-a-DLX-gt-对X-Algorithm的优化&#34;&gt;&lt;a href=&#34;#DancingLinks-X-舞蹈链-a-k-a-DLX-gt-对X-Algorithm的优化&#34; class=&#34;headerlink&#34; title=&#34;DancingLinks X 舞蹈链(a.k.a. DLX) -&amp;gt; 对X Algorithm的优化&#34;&gt;&lt;/a&gt;DancingLinks X 舞蹈链(a.k.a. DLX) -&amp;gt; 对X Algorithm的优化&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;./%E5%9B%BE%E7%89%874.png&#34; alt=&#34;image&#34;&gt;&lt;br&gt;如上图，利用链表 快速查找1的位置 &amp;amp;&amp;amp; 快速删除、插入&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;在ppt里提到的一种数据结构, 由于懒就不写推导过程了&lt;/del&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.cnblogs.com/grenet/p/3145800.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reference&lt;/a&gt;&amp;gt;&amp;gt;&amp;gt;&lt;br&gt;Dancing Links的核心是基于双向链的方便操作（移除、恢复加入）(实现略)  &lt;/p&gt;
+&lt;p&gt;将链表的操作应用于 &lt;em&gt;X算法&lt;/em&gt; 中，即可得到DancingLinksX数据结构&lt;br&gt;利用链表添加删除O(1)的特点满足X算法的需求，而且矩阵中若1的个数很大，X算法+DLX可以极快的缩小搜索规模&lt;/p&gt;
+&lt;p&gt;特点: 每列有一个辅助节点，列节点首有一个head节点&lt;br&gt;节点保存 &lt;strong&gt;上下左右的指针&lt;/strong&gt; &amp;lt;- 核心&lt;/p&gt;
+&lt;p&gt;运行效率很高，理由：&lt;br&gt;链表的跳转次数取决于矩阵中1的个数&lt;br&gt;如果矩阵中1的个数很多，会被X算法迅速缩小到很小的规模   &lt;/p&gt;
+&lt;p&gt;请求裸题&amp;gt;&amp;gt;&amp;gt;&lt;/p&gt;
+&lt;p&gt;End&lt;/p&gt;
+</content>
+        <category term="Algorithm" />
+        <category term="RAW" />
+        <category term="Memo" />
+        <category term="Searching" />
+        <updated>2019-02-02T17:50:35.000Z</updated>
+    </entry>
+</feed>
