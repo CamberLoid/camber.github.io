@@ -11,8 +11,8 @@
         <category>RAW</category>
         <category>Memo</category>
         <category>Searching</category>
-        <category>咕咕咕, 想不出来, 随笔</category>
         <category>Mo-Yu</category>
+        <category>咕咕咕, 想不出来, 随笔</category>
         <item>
             <guid isPermalink="true">https://logistics.camber.moe/2020/GitRevised/</guid>
             <title>Things about Git</title>
@@ -118,7 +118,7 @@ git config pull.ff only       # 仅快进
             <link>https://logistics.camber.moe/2020/UpdateRestart/</link>
             <pubDate>Wed, 17 Jun 2020 09:39:24 +0800</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;博客域名更换到 &lt;a href=&#34;https://Logistics.camber.moe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://Logistics.camber.moe&lt;/a&gt; , 原域名 &lt;a href=&#34;https://camber.moe&#34;&gt;https://camber.moe&lt;/a&gt; 改放个人主页了(虽然极其简陋). &lt;/p&gt;
+&lt;p&gt;博客域名更换到 &lt;a href=&#34;https://Logistics.camber.moe&#34;&gt;https://Logistics.camber.moe&lt;/a&gt; , 原域名 &lt;a href=&#34;https://camber.moe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://camber.moe&lt;/a&gt; 改放个人主页了(虽然极其简陋). &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;如题, 状态稍微恢复了一点, 是时候把积压的点子全写出来了.&lt;br&gt;包括但不限于: &lt;/p&gt;
 &lt;ul&gt;
