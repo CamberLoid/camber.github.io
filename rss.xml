@@ -95,7 +95,7 @@ git config pull.ff only       # 仅快进
 &lt;!-- /Legacy --&gt;
 
 &lt;h2 id=&#34;0x04-Bash&#34;&gt;&lt;a href=&#34;#0x04-Bash&#34; class=&#34;headerlink&#34; title=&#34;0x04 Bash&#34;&gt;&lt;/a&gt;0x04 Bash&lt;/h2&gt;&lt;p&gt;其实我完全忘了Git-scm的Windows套件有Bash.&lt;br&gt;但也不懂怎么教, 故Pass.&lt;/p&gt;
-&lt;h2 id=&#34;0xFD-VSCode-相关&#34;&gt;&lt;a href=&#34;#0xFD-VSCode-相关&#34; class=&#34;headerlink&#34; title=&#34;0xFD VSCode 相关&#34;&gt;&lt;/a&gt;0xFD VSCode 相关&lt;/h2&gt;&lt;p&gt;VSCode有一个&lt;em&gt;源代码管理&lt;/em&gt;部分. 可以基本替代Git CLI使用.&lt;br&gt;他张这个样子:&lt;br&gt;&lt;img src=&#34;../images/Git_and_OSH/Screenshot_20200617_002910.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;0xFD-VSCode-相关&#34;&gt;&lt;a href=&#34;#0xFD-VSCode-相关&#34; class=&#34;headerlink&#34; title=&#34;0xFD VSCode 相关&#34;&gt;&lt;/a&gt;0xFD VSCode 相关&lt;/h2&gt;&lt;p&gt;VSCode有一个&lt;em&gt;源代码管理&lt;/em&gt;部分. 可以基本替代Git CLI使用.&lt;br&gt;他张这个样子:&lt;br&gt;&lt;img src=&#34;/images/Git_and_OSH/Screenshot_20200617_002910.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;可以简单地: 填写消息, 暂存/撤销更改, 提交更改, 拉取和推送等. 是的拱拱就是在安利呢. &lt;/p&gt;
 &lt;h2 id=&#34;0xFE-vim相关&#34;&gt;&lt;a href=&#34;#0xFE-vim相关&#34; class=&#34;headerlink&#34; title=&#34;0xFE vim相关&#34;&gt;&lt;/a&gt;0xFE vim相关&lt;/h2&gt;&lt;p&gt;声明: 拱拱使不来.  &lt;/p&gt;
 &lt;p&gt;最基本的操作是&lt;/p&gt;
@@ -107,7 +107,7 @@ git config pull.ff only       # 仅快进
 &lt;/ul&gt;
 &lt;h2 id=&#34;0xFF-GPG相关&#34;&gt;&lt;a href=&#34;#0xFF-GPG相关&#34; class=&#34;headerlink&#34; title=&#34;0xFF GPG相关&#34;&gt;&lt;/a&gt;0xFF GPG相关&lt;/h2&gt;&lt;p&gt;GPG的作用是证明 &lt;strong&gt;你是你自己&lt;/strong&gt;. 哲学的基本问题.&lt;br&gt;对于Git, GPG可以对你提交的更改生成一个签名, 以证明&lt;strong&gt;这是你提交的&lt;/strong&gt;. 有的人就是比较Care这件事. &lt;/p&gt;
 &lt;p&gt;如果你没有PGP密钥对, 使用&lt;code&gt;gpg --full-generate-key&lt;/code&gt;跟着提示走创建一组.&lt;br&gt;如果使用Github, 使用&lt;code&gt;gpg --armor --export&lt;/code&gt;导出公钥后前往&lt;a href=&#34;https://github.com/settings/keys&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github的GPG设置&lt;/a&gt;页面在添加PGP公钥原样粘贴上去.&lt;br&gt;然后&lt;code&gt;gpg --list-keys&lt;/code&gt;把&lt;code&gt;pub&lt;/code&gt;下面那行记下(复制), 在git-config中加上 &lt;code&gt;user.signingkey &amp;quot;刚才复制的那行&amp;quot;&lt;/code&gt;, &lt;code&gt;commit.gpgsign=true&lt;/code&gt;. 就好了. &lt;/p&gt;
-&lt;p&gt;如果需要验证的话, 提交个更改, 推送到Github, 在你仓库网页中的&lt;code&gt;commit&lt;/code&gt;一栏出现这么些东西, 你就成功了.&lt;br&gt;&lt;img src=&#34;../images/Git_and_OSH/Screenshot_20200617_005321.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果需要验证的话, 提交个更改, 推送到Github, 在你仓库网页中的&lt;code&gt;commit&lt;/code&gt;一栏出现这么些东西, 你就成功了.&lt;br&gt;&lt;img src=&#34;/images/Git_and_OSH/Screenshot_20200617_005321.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;Reference&#34;&gt;&lt;a href=&#34;#Reference&#34; class=&#34;headerlink&#34; title=&#34;Reference&#34;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;p&gt;[1] &lt;a href=&#34;https://help.github.com/cn/github&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://help.github.com/cn/github&lt;/a&gt; 来自Github的中文文档.&lt;br&gt;[2] &lt;a href=&#34;https://git-scm.com/book/zh/v2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://git-scm.com/book/zh/v2&lt;/a&gt; 来自Git-scm的中文教程. 他们的Reference是英文的.&lt;/p&gt;
 &lt;p&gt;拱拱 / Camber / Billy Huang&lt;br&gt;点子开始于20200614, 完成于20200616, 发布于20200617.&lt;/p&gt;
  ]]></description>
