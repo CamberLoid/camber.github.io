@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://camber.moe</id>
+    <id>https://logistics.camber.moe</id>
     <title>Camber&#39;s Logistics | Archive • Posts by &#34;tech&#34; category</title>
-    <link href="https://camber.moe" />
+    <link href="https://logistics.camber.moe" />
     <updated>2020-06-17T02:08:22.000Z</updated>
     <category term="Algorithm" />
     <category term="RAW" />
@@ -11,9 +11,9 @@
     <category term="咕咕咕, 想不出来, 随笔" />
     <category term="Mo-Yu" />
     <entry>
-        <id>https://camber.moe/2020/GitRevised/</id>
+        <id>https://logistics.camber.moe/2020/GitRevised/</id>
         <title>Things about Git</title>
-        <link rel="alternate" href="https://camber.moe/2020/GitRevised/"/>
+        <link rel="alternate" href="https://logistics.camber.moe/2020/GitRevised/"/>
         <content type="html">&lt;!--# Things about Git - 20200616--&gt;
 
 &lt;h2 id=&#34;0x00-碎碎念&#34;&gt;&lt;a href=&#34;#0x00-碎碎念&#34; class=&#34;headerlink&#34; title=&#34;0x00 碎碎念&#34;&gt;&lt;/a&gt;0x00 碎碎念&lt;/h2&gt;&lt;p&gt;想写一个Revised version &lt;del&gt;KISS&lt;/del&gt; manual of Git.&lt;br&gt;主要是, 最近拱拱大学开了门叫做[开源硬件开发与应用]的课程, 然后好多人对Git不熟.&lt;br&gt;基于拱拱的个人经验, 写了一篇&lt;a href=&#34;https://github.com/CamberLoid/xd0615/blob/master/1-Notes/Git_Related.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Git Related&lt;/a&gt;, 但是那个是&lt;strong&gt;极其随意写的&lt;/strong&gt;.&lt;br&gt;在知识范围内, 这篇会稍微详细一些.  &lt;/p&gt;

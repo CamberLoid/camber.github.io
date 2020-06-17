@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://camber.moe</id>
+    <id>https://logistics.camber.moe</id>
     <title>Camber&#39;s Logistics | Archive • Posts by &#34;[algorithms]&#34; category</title>
-    <link href="https://camber.moe" />
+    <link href="https://logistics.camber.moe" />
     <updated>2019-02-02T17:50:35.000Z</updated>
     <category term="Algorithm" />
     <category term="RAW" />
@@ -11,9 +11,9 @@
     <category term="咕咕咕, 想不出来, 随笔" />
     <category term="Mo-Yu" />
     <entry>
-        <id>https://camber.moe/2019/memo-Searching/</id>
+        <id>https://logistics.camber.moe/2019/memo-Searching/</id>
         <title>&lt;待整理&gt;关于搜索的笔记</title>
-        <link rel="alternate" href="https://camber.moe/2019/memo-Searching/"/>
+        <link rel="alternate" href="https://logistics.camber.moe/2019/memo-Searching/"/>
         <content type="html">&lt;h1 id=&#34;XDU-ICPC-搜索Ex-ppt-Memo-Rawα-w-vjudge-2&#34;&gt;&lt;a href=&#34;#XDU-ICPC-搜索Ex-ppt-Memo-Rawα-w-vjudge-2&#34; class=&#34;headerlink&#34; title=&#34;XDU_ICPC /搜索Ex.ppt / Memo Rawα /w vjudge_2&#34;&gt;&lt;/a&gt;XDU_ICPC /搜索Ex.ppt / Memo Rawα &lt;br&gt;/w vjudge_2&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;待整理，或许就不整理了&lt;/p&gt;
 &lt;/blockquote&gt;

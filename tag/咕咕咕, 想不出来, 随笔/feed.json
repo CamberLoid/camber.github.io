@@ -2,11 +2,11 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Camber's Logistics | Archive • All posts by \"咕咕咕, 想不出来, 随笔\" tag",
     "description": "Camber物流 | 存档处",
-    "home_page_url": "https://camber.moe",
+    "home_page_url": "https://logistics.camber.moe",
     "items": [
         {
-            "id": "https://camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/",
-            "url": "https://camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/",
+            "id": "https://logistics.camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/",
+            "url": "https://logistics.camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/",
             "title": "咕咕咕后的下一次更新",
             "date_published": "2019-04-01T19:16:54.000Z",
             "content_html": "<p>总之，<a href=\"https://gplt.patest.cn\" target=\"_blank\" rel=\"noopener\">GPLT</a>打完了<br><img src=\"/images/GPLT.jpg\" alt=\"image\">  </p>\n<p>也该考虑下博客更新什么的了<br>你懒本质上还是一个咸鱼，主题搞好了，先咸着了</p>\n<p>然后是随笔: </p>\n<p>下次装ArchLinux的时候 一定要注意 <code>systemctl enable NetworkManager.service</code> 的大小写<br>(MD这东西居然大小写敏感我的天)</p>\n",

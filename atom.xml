@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://camber.moe</id>
+    <id>https://logistics.camber.moe</id>
     <title>Camber&#39;s Logistics | Archive</title>
-    <link href="https://camber.moe" />
+    <link href="https://logistics.camber.moe" />
     <updated>2020-06-17T02:08:22.000Z</updated>
     <category term="Algorithm" />
     <category term="RAW" />
@@ -11,9 +11,9 @@
     <category term="咕咕咕, 想不出来, 随笔" />
     <category term="Mo-Yu" />
     <entry>
-        <id>https://camber.moe/2020/GitRevised/</id>
+        <id>https://logistics.camber.moe/2020/GitRevised/</id>
         <title>Things about Git</title>
-        <link rel="alternate" href="https://camber.moe/2020/GitRevised/"/>
+        <link rel="alternate" href="https://logistics.camber.moe/2020/GitRevised/"/>
         <content type="html">&lt;!--# Things about Git - 20200616--&gt;
 
 &lt;h2 id=&#34;0x00-碎碎念&#34;&gt;&lt;a href=&#34;#0x00-碎碎念&#34; class=&#34;headerlink&#34; title=&#34;0x00 碎碎念&#34;&gt;&lt;/a&gt;0x00 碎碎念&lt;/h2&gt;&lt;p&gt;想写一个Revised version &lt;del&gt;KISS&lt;/del&gt; manual of Git.&lt;br&gt;主要是, 最近拱拱大学开了门叫做[开源硬件开发与应用]的课程, 然后好多人对Git不熟.&lt;br&gt;基于拱拱的个人经验, 写了一篇&lt;a href=&#34;https://github.com/CamberLoid/xd0615/blob/master/1-Notes/Git_Related.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Git Related&lt;/a&gt;, 但是那个是&lt;strong&gt;极其随意写的&lt;/strong&gt;.&lt;br&gt;在知识范围内, 这篇会稍微详细一些.  &lt;/p&gt;
@@ -110,9 +110,9 @@ git config pull.ff only       # 仅快进
         <updated>2020-06-17T02:08:22.000Z</updated>
     </entry>
     <entry>
-        <id>https://camber.moe/2020/UpdateRestart/</id>
+        <id>https://logistics.camber.moe/2020/UpdateRestart/</id>
         <title>更新恢复的碎碎念</title>
-        <link rel="alternate" href="https://camber.moe/2020/UpdateRestart/"/>
+        <link rel="alternate" href="https://logistics.camber.moe/2020/UpdateRestart/"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;博客域名更换到 &lt;a href=&#34;https://Logistics.camber.moe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://Logistics.camber.moe&lt;/a&gt; , 原域名 &lt;a href=&#34;https://camber.moe&#34;&gt;https://camber.moe&lt;/a&gt; 改放个人主页了(虽然极其简陋). &lt;/p&gt;
 &lt;/blockquote&gt;
@@ -131,9 +131,9 @@ git config pull.ff only       # 仅快进
         <updated>2020-06-17T01:39:24.000Z</updated>
     </entry>
     <entry>
-        <id>https://camber.moe/2020/Operation-BlackRay-PAR/</id>
+        <id>https://logistics.camber.moe/2020/Operation-BlackRay-PAR/</id>
         <title>从计划到实施只有16个小时的行动:黑光</title>
-        <link rel="alternate" href="https://camber.moe/2020/Operation-BlackRay-PAR/"/>
+        <link rel="alternate" href="https://logistics.camber.moe/2020/Operation-BlackRay-PAR/"/>
         <content type="html">&lt;p&gt;&lt;font color=lightBlue&gt;来自ADA的提示：&lt;br&gt;本文可能包含流水账 语无伦次 图文无关 跑题等现象&lt;br&gt;&lt;strong&gt;所有记录经过修改润色加工，一般情况下都不是原意。&lt;/strong&gt;&lt;br&gt;发布于博客和北蓝公众号。&lt;br&gt;&lt;/font&gt;   &lt;/p&gt;
 &lt;h2 id=&#34;0x1F-前前言&#34;&gt;&lt;a href=&#34;#0x1F-前前言&#34; class=&#34;headerlink&#34; title=&#34;0x1F 前前言&#34;&gt;&lt;/a&gt;0x1F 前前言&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&amp;lt;2019.12.21 记录开始&amp;gt;&lt;br&gt;&lt;del&gt;开始动笔&lt;/del&gt; 收到了来自[数据删除]的R6申请。开始R6。&lt;/p&gt;
@@ -249,9 +249,9 @@ git config pull.ff only       # 仅快进
         <updated>2020-01-01T07:01:27.000Z</updated>
     </entry>
     <entry>
-        <id>https://camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/</id>
+        <id>https://logistics.camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/</id>
         <title>咕咕咕后的下一次更新</title>
-        <link rel="alternate" href="https://camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/"/>
+        <link rel="alternate" href="https://logistics.camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/"/>
         <content type="html">&lt;p&gt;总之，&lt;a href=&#34;https://gplt.patest.cn&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GPLT&lt;/a&gt;打完了&lt;br&gt;&lt;img src=&#34;/images/GPLT.jpg&#34; alt=&#34;image&#34;&gt;  &lt;/p&gt;
 &lt;p&gt;也该考虑下博客更新什么的了&lt;br&gt;你懒本质上还是一个咸鱼，主题搞好了，先咸着了&lt;/p&gt;
 &lt;p&gt;然后是随笔: &lt;/p&gt;
@@ -261,9 +261,9 @@ git config pull.ff only       # 仅快进
         <updated>2019-04-01T19:16:54.000Z</updated>
     </entry>
     <entry>
-        <id>https://camber.moe/2019/hello-world/</id>
+        <id>https://logistics.camber.moe/2019/hello-world/</id>
         <title>Hello World</title>
-        <link rel="alternate" href="https://camber.moe/2019/hello-world/"/>
+        <link rel="alternate" href="https://logistics.camber.moe/2019/hello-world/"/>
         <content type="html">&lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ hexo new &amp;quot;My New Post&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;

@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Camber&#39;s Logistics | Archive • Posts by &#34;tech&#34; category</title>
-        <link>https://camber.moe</link>
+        <link>https://logistics.camber.moe</link>
         <description>Camber物流 | 存档处</description>
         <language>zh-CN</language>
         <pubDate>Wed, 17 Jun 2020 10:08:22 +0800</pubDate>
@@ -14,9 +14,9 @@
         <category>咕咕咕, 想不出来, 随笔</category>
         <category>Mo-Yu</category>
         <item>
-            <guid isPermalink="true">https://camber.moe/2020/GitRevised/</guid>
+            <guid isPermalink="true">https://logistics.camber.moe/2020/GitRevised/</guid>
             <title>Things about Git</title>
-            <link>https://camber.moe/2020/GitRevised/</link>
+            <link>https://logistics.camber.moe/2020/GitRevised/</link>
             <pubDate>Wed, 17 Jun 2020 10:08:22 +0800</pubDate>
             <description><![CDATA[ &lt;!--# Things about Git - 20200616--&gt;
 

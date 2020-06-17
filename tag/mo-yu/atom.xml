@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://camber.moe</id>
+    <id>https://logistics.camber.moe</id>
     <title>Camber&#39;s Logistics | Archive • Posts by &#34;mo-yu&#34; tag</title>
-    <link href="https://camber.moe" />
+    <link href="https://logistics.camber.moe" />
     <updated>2019-01-27T16:00:00.000Z</updated>
     <category term="Algorithm" />
     <category term="RAW" />
@@ -11,9 +11,9 @@
     <category term="咕咕咕, 想不出来, 随笔" />
     <category term="Mo-Yu" />
     <entry>
-        <id>https://camber.moe/2019/memo-day5-RAW/</id>
+        <id>https://logistics.camber.moe/2019/memo-day5-RAW/</id>
         <title>memo.day5.RAW</title>
-        <link rel="alternate" href="https://camber.moe/2019/memo-day5-RAW/"/>
+        <link rel="alternate" href="https://logistics.camber.moe/2019/memo-day5-RAW/"/>
         <content type="html">&lt;p&gt;// C++大法好，我选择Python&lt;br&gt;// D.R.G. == Delete Rayark Games&lt;br&gt;没错我说的就是Cytus II &lt;/p&gt;
 &lt;p&gt;Index:&lt;br&gt;数论&lt;/p&gt;
 &lt;ul&gt;

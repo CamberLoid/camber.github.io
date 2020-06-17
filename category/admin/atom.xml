@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://camber.moe</id>
+    <id>https://logistics.camber.moe</id>
     <title>Camber&#39;s Logistics | Archive • Posts by &#34;admin&#34; category</title>
-    <link href="https://camber.moe" />
+    <link href="https://logistics.camber.moe" />
     <updated>2020-06-17T01:39:24.000Z</updated>
     <category term="Algorithm" />
     <category term="RAW" />
@@ -11,9 +11,9 @@
     <category term="咕咕咕, 想不出来, 随笔" />
     <category term="Mo-Yu" />
     <entry>
-        <id>https://camber.moe/2020/UpdateRestart/</id>
+        <id>https://logistics.camber.moe/2020/UpdateRestart/</id>
         <title>更新恢复的碎碎念</title>
-        <link rel="alternate" href="https://camber.moe/2020/UpdateRestart/"/>
+        <link rel="alternate" href="https://logistics.camber.moe/2020/UpdateRestart/"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;博客域名更换到 &lt;a href=&#34;https://Logistics.camber.moe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://Logistics.camber.moe&lt;/a&gt; , 原域名 &lt;a href=&#34;https://camber.moe&#34;&gt;https://camber.moe&lt;/a&gt; 改放个人主页了(虽然极其简陋). &lt;/p&gt;
 &lt;/blockquote&gt;

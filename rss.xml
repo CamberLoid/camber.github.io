@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Camber&#39;s Logistics | Archive</title>
-        <link>https://camber.moe</link>
+        <link>https://logistics.camber.moe</link>
         <description>Camber物流 | 存档处</description>
         <language>zh-CN</language>
         <pubDate>Wed, 17 Jun 2020 10:08:22 +0800</pubDate>
@@ -14,9 +14,9 @@
         <category>咕咕咕, 想不出来, 随笔</category>
         <category>Mo-Yu</category>
         <item>
-            <guid isPermalink="true">https://camber.moe/2020/GitRevised/</guid>
+            <guid isPermalink="true">https://logistics.camber.moe/2020/GitRevised/</guid>
             <title>Things about Git</title>
-            <link>https://camber.moe/2020/GitRevised/</link>
+            <link>https://logistics.camber.moe/2020/GitRevised/</link>
             <pubDate>Wed, 17 Jun 2020 10:08:22 +0800</pubDate>
             <description><![CDATA[ &lt;!--# Things about Git - 20200616--&gt;
 
@@ -113,9 +113,9 @@ git config pull.ff only       # 仅快进
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://camber.moe/2020/UpdateRestart/</guid>
+            <guid isPermalink="true">https://logistics.camber.moe/2020/UpdateRestart/</guid>
             <title>更新恢复的碎碎念</title>
-            <link>https://camber.moe/2020/UpdateRestart/</link>
+            <link>https://logistics.camber.moe/2020/UpdateRestart/</link>
             <pubDate>Wed, 17 Jun 2020 09:39:24 +0800</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
 &lt;p&gt;博客域名更换到 &lt;a href=&#34;https://Logistics.camber.moe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://Logistics.camber.moe&lt;/a&gt; , 原域名 &lt;a href=&#34;https://camber.moe&#34;&gt;https://camber.moe&lt;/a&gt; 改放个人主页了(虽然极其简陋). &lt;/p&gt;
@@ -134,9 +134,9 @@ git config pull.ff only       # 仅快进
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://camber.moe/2020/Operation-BlackRay-PAR/</guid>
+            <guid isPermalink="true">https://logistics.camber.moe/2020/Operation-BlackRay-PAR/</guid>
             <title>从计划到实施只有16个小时的行动:黑光</title>
-            <link>https://camber.moe/2020/Operation-BlackRay-PAR/</link>
+            <link>https://logistics.camber.moe/2020/Operation-BlackRay-PAR/</link>
             <pubDate>Wed, 01 Jan 2020 15:01:27 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;font color=lightBlue&gt;来自ADA的提示：&lt;br&gt;本文可能包含流水账 语无伦次 图文无关 跑题等现象&lt;br&gt;&lt;strong&gt;所有记录经过修改润色加工，一般情况下都不是原意。&lt;/strong&gt;&lt;br&gt;发布于博客和北蓝公众号。&lt;br&gt;&lt;/font&gt;   &lt;/p&gt;
 &lt;h2 id=&#34;0x1F-前前言&#34;&gt;&lt;a href=&#34;#0x1F-前前言&#34; class=&#34;headerlink&#34; title=&#34;0x1F 前前言&#34;&gt;&lt;/a&gt;0x1F 前前言&lt;/h2&gt;&lt;blockquote&gt;
@@ -252,9 +252,9 @@ git config pull.ff only       # 仅快进
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/</guid>
+            <guid isPermalink="true">https://logistics.camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/</guid>
             <title>咕咕咕后的下一次更新</title>
-            <link>https://camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/</link>
+            <link>https://logistics.camber.moe/2019/%E5%92%95%E5%92%95%E5%92%95%E5%90%8E%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/</link>
             <category>咕咕咕, 想不出来, 随笔</category>
             <pubDate>Tue, 02 Apr 2019 03:16:54 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;总之，&lt;a href=&#34;https://gplt.patest.cn&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GPLT&lt;/a&gt;打完了&lt;br&gt;&lt;img src=&#34;/images/GPLT.jpg&#34; alt=&#34;image&#34;&gt;  &lt;/p&gt;
@@ -264,9 +264,9 @@ git config pull.ff only       # 仅快进
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://camber.moe/2019/hello-world/</guid>
+            <guid isPermalink="true">https://logistics.camber.moe/2019/hello-world/</guid>
             <title>Hello World</title>
-            <link>https://camber.moe/2019/hello-world/</link>
+            <link>https://logistics.camber.moe/2019/hello-world/</link>
             <pubDate>Sat, 30 Mar 2019 01:14:07 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ hexo new &amp;quot;My New Post&amp;quot;&lt;/code&gt;&lt;/pre&gt;

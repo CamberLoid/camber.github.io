@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Camber&#39;s Logistics | Archive • Posts by &#34;algorithm&#34; tag</title>
-        <link>https://camber.moe</link>
+        <link>https://logistics.camber.moe</link>
         <description>Camber物流 | 存档处</description>
         <language>zh-CN</language>
         <pubDate>Sun, 03 Feb 2019 01:50:35 +0800</pubDate>
@@ -14,9 +14,9 @@
         <category>咕咕咕, 想不出来, 随笔</category>
         <category>Mo-Yu</category>
         <item>
-            <guid isPermalink="true">https://camber.moe/2019/memo-Searching/</guid>
+            <guid isPermalink="true">https://logistics.camber.moe/2019/memo-Searching/</guid>
             <title>&lt;待整理&gt;关于搜索的笔记</title>
-            <link>https://camber.moe/2019/memo-Searching/</link>
+            <link>https://logistics.camber.moe/2019/memo-Searching/</link>
             <category>Algorithm</category>
             <category>RAW</category>
             <category>Memo</category>
