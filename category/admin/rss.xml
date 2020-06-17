@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Camber&#39;s Logistics | Archive • Posts by &#34;admin&#34; category</title>
+        <link>https://camber.moe</link>
+        <description>Camber物流 | 存档处</description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 17 Jun 2020 09:39:24 +0800</pubDate>
+        <lastBuildDate>Wed, 17 Jun 2020 09:39:24 +0800</lastBuildDate>
+        <category>Algorithm</category>
+        <category>RAW</category>
+        <category>Memo</category>
+        <category>Searching</category>
+        <category>Mo-Yu</category>
+        <category>咕咕咕, 想不出来, 随笔</category>
+        <item>
+            <guid isPermalink="true">https://camber.moe/2020/UpdateRestart/</guid>
+            <title>更新恢复的碎碎念</title>
+            <link>https://camber.moe/2020/UpdateRestart/</link>
+            <pubDate>Wed, 17 Jun 2020 09:39:24 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;博客域名更换到 &lt;a href=&#34;https://Logistics.camber.moe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://Logistics.camber.moe&lt;/a&gt; , 原域名 &lt;a href=&#34;https://camber.moe&#34;&gt;https://camber.moe&lt;/a&gt; 改放个人主页了(虽然极其简陋). &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如题, 状态稍微恢复了一点, 是时候把积压的点子全写出来了.&lt;br&gt;包括但不限于: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;由学校开源硬件相关课程引出的Git Revised和相关碎碎念&lt;/li&gt;
+&lt;li&gt;几个月前鼓捣的 &lt;em&gt;Kernel DRM, PRIME on proprietary NVIDIA driver and Multihead on N/I Optimus&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;HTML/CSS相关碎碎念&lt;/li&gt;
+&lt;li&gt;一些Ingress相关文章&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;大概就这么多? 反正如果拱拱咕咕了请记得催稿.&lt;br&gt;以及, 现在起拱拱单方面宣布喜欢 猪猪/&lt;code&gt;Piggymoe&lt;/code&gt; (暂定).  &lt;/p&gt;
+&lt;p&gt;顺便, 打算更新About页面了.&lt;/p&gt;
+&lt;p&gt;以上.&lt;/p&gt;
+&lt;p&gt;“拱拱”/Camber/Billy Huang&lt;br&gt;20200617&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

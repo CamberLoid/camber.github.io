@@ -1,0 +1,16 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Camber's Logistics | Archive • All posts by \"admin\" category",
+    "description": "Camber物流 | 存档处",
+    "home_page_url": "https://camber.moe",
+    "items": [
+        {
+            "id": "https://camber.moe/2020/UpdateRestart/",
+            "url": "https://camber.moe/2020/UpdateRestart/",
+            "title": "更新恢复的碎碎念",
+            "date_published": "2020-06-17T01:39:24.000Z",
+            "content_html": "<blockquote>\n<p>博客域名更换到 <a href=\"https://Logistics.camber.moe\" target=\"_blank\" rel=\"noopener\">https://Logistics.camber.moe</a> , 原域名 <a href=\"https://camber.moe\">https://camber.moe</a> 改放个人主页了(虽然极其简陋). </p>\n</blockquote>\n<p>如题, 状态稍微恢复了一点, 是时候把积压的点子全写出来了.<br>包括但不限于: </p>\n<ul>\n<li>由学校开源硬件相关课程引出的Git Revised和相关碎碎念</li>\n<li>几个月前鼓捣的 <em>Kernel DRM, PRIME on proprietary NVIDIA driver and Multihead on N/I Optimus</em></li>\n<li>HTML/CSS相关碎碎念</li>\n<li>一些Ingress相关文章</li>\n</ul>\n<p>大概就这么多? 反正如果拱拱咕咕了请记得催稿.<br>以及, 现在起拱拱单方面宣布喜欢 猪猪/<code>Piggymoe</code> (暂定).  </p>\n<p>顺便, 打算更新About页面了.</p>\n<p>以上.</p>\n<p>“拱拱”/Camber/Billy Huang<br>20200617</p>\n",
+            "tags": []
+        }
+    ]
+}
