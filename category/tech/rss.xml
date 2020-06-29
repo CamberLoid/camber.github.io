@@ -7,6 +7,10 @@
         <language>zh-CN</language>
         <pubDate>Wed, 17 Jun 2020 10:08:22 +0800</pubDate>
         <lastBuildDate>Wed, 17 Jun 2020 10:08:22 +0800</lastBuildDate>
+        <category>Tech</category>
+        <category>Ingress</category>
+        <category>IFS</category>
+        <category>Lores</category>
         <category>Algorithm</category>
         <category>RAW</category>
         <category>Memo</category>
@@ -17,6 +21,7 @@
             <guid isPermalink="true">https://logistics.camber.moe/2020/GitRevised/</guid>
             <title>Things about Git</title>
             <link>https://logistics.camber.moe/2020/GitRevised/</link>
+            <category>Tech</category>
             <pubDate>Wed, 17 Jun 2020 10:08:22 +0800</pubDate>
             <description><![CDATA[ &lt;!--# Things about Git - 20200616--&gt;
 

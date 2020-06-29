@@ -4,6 +4,10 @@
     <title>Camber&#39;s Logistics | Archive • Posts by &#34;tech&#34; category</title>
     <link href="https://logistics.camber.moe" />
     <updated>2020-06-17T02:08:22.000Z</updated>
+    <category term="Tech" />
+    <category term="Ingress" />
+    <category term="IFS" />
+    <category term="Lores" />
     <category term="Algorithm" />
     <category term="RAW" />
     <category term="Memo" />
@@ -107,6 +111,7 @@ git config pull.ff only       # 仅快进
 &lt;h2 id=&#34;Reference&#34;&gt;&lt;a href=&#34;#Reference&#34; class=&#34;headerlink&#34; title=&#34;Reference&#34;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;p&gt;[1] &lt;a href=&#34;https://help.github.com/cn/github&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://help.github.com/cn/github&lt;/a&gt; 来自Github的中文文档.&lt;br&gt;[2] &lt;a href=&#34;https://git-scm.com/book/zh/v2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://git-scm.com/book/zh/v2&lt;/a&gt; 来自Git-scm的中文教程. 他们的Reference是英文的.&lt;/p&gt;
 &lt;p&gt;拱拱 / Camber / Billy Huang&lt;br&gt;点子开始于20200614, 完成于20200616, 发布于20200617.&lt;/p&gt;
 </content>
+        <category term="Tech" />
         <updated>2020-06-17T02:08:22.000Z</updated>
     </entry>
 </feed>

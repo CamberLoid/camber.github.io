@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Camber&#39;s Logistics | Archive • Posts by &#34;tech&#34; tag</title>
+        <link>https://logistics.camber.moe</link>
+        <description>Camber物流 | 存档处</description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 17 Jun 2020 10:08:22 +0800</pubDate>
+        <lastBuildDate>Wed, 17 Jun 2020 10:08:22 +0800</lastBuildDate>
+        <category>Tech</category>
+        <category>Ingress</category>
+        <category>IFS</category>
+        <category>Lores</category>
+        <category>Algorithm</category>
+        <category>RAW</category>
+        <category>Memo</category>
+        <category>Searching</category>
+        <category>Mo-Yu</category>
+        <category>咕咕咕, 想不出来, 随笔</category>
+        <item>
+            <guid isPermalink="true">https://logistics.camber.moe/2020/GitRevised/</guid>
+            <title>Things about Git</title>
+            <link>https://logistics.camber.moe/2020/GitRevised/</link>
+            <category>Tech</category>
+            <pubDate>Wed, 17 Jun 2020 10:08:22 +0800</pubDate>
+            <description><![CDATA[ &lt;!--# Things about Git - 20200616--&gt;
+
+&lt;h2 id=&#34;0x00-碎碎念&#34;&gt;&lt;a href=&#34;#0x00-碎碎念&#34; class=&#34;headerlink&#34; title=&#34;0x00 碎碎念&#34;&gt;&lt;/a&gt;0x00 碎碎念&lt;/h2&gt;&lt;p&gt;想写一个Revised version &lt;del&gt;KISS&lt;/del&gt; manual of Git.&lt;br&gt;主要是, 最近拱拱大学开了门叫做[开源硬件开发与应用]的课程, 然后好多人对Git不熟.&lt;br&gt;基于拱拱的个人经验, 写了一篇&lt;a href=&#34;https://github.com/CamberLoid/xd0615/blob/master/1-Notes/Git_Related.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Git Related&lt;/a&gt;, 但是那个是&lt;strong&gt;极其随意写的&lt;/strong&gt;.&lt;br&gt;在知识范围内, 这篇会稍微详细一些.  &lt;/p&gt;
+&lt;p&gt;说在前头, 拱拱推荐Linux的另一个原因是, &lt;strong&gt;中文化&lt;/strong&gt;. &lt;a href=&#34;#on-windows-subsystem-linux&#34;&gt;See why&lt;/a&gt; &lt;/p&gt;
+&lt;h2 id=&#34;0x01-Installing-Git&#34;&gt;&lt;a href=&#34;#0x01-Installing-Git&#34; class=&#34;headerlink&#34; title=&#34;0x01 Installing Git&#34;&gt;&lt;/a&gt;0x01 Installing Git&lt;/h2&gt;&lt;h3 id=&#34;On-Windows&#34;&gt;&lt;a href=&#34;#On-Windows&#34; class=&#34;headerlink&#34; title=&#34;On Windows&#34;&gt;&lt;/a&gt;On Windows&lt;/h3&gt;&lt;p&gt;从Git-scm下载Git套件, 安装.&lt;br&gt;Windows 10 Insider Build可以在Powershell下使用&lt;code&gt;winget&lt;/code&gt;下载: &lt;code&gt;winget install Git.Git&lt;/code&gt;.(好像是这个, 不保证准确性)&lt;/p&gt;
+&lt;h3 id=&#34;On-Windows-Subsystem-Linux&#34;&gt;&lt;a href=&#34;#On-Windows-Subsystem-Linux&#34; class=&#34;headerlink&#34; title=&#34;On Windows Subsystem Linux&#34;&gt;&lt;/a&gt;On Windows Subsystem Linux&lt;/h3&gt;&lt;p&gt;Windows Subsystem Linux or WSL是Windows10的一个特性, 可以在Windows上原生使用Linux于终端执行Linux二进制文件. Linux的一个优点是环境配置极其方便, &lt;strong&gt;拱拱推荐这种方式.&lt;/strong&gt;&lt;br&gt;在&lt;code&gt;启用和删除Windows功能&lt;/code&gt;上把&lt;code&gt;适用于Windows的Linux子系统&lt;/code&gt;勾选上, 重启电脑后去Windows store搜索下载Ubuntu(推荐)即可使用. WSL配置过程参考此链接 &lt;a href=&#34;https://docs.microsoft.com/zh-cn/windows/wsl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.microsoft.com/zh-cn/windows/wsl/&lt;/a&gt; .  &lt;/p&gt;
+&lt;p&gt;有Linux环境就好说了, Ubuntu自带OpenSSH套件和Git. 即使如此仍然推荐下载Windows的Git-scm套件.&lt;br&gt;对于Ubuntu, 中文支持需要&lt;code&gt;language-pack-zh-hans&lt;/code&gt;这个包, &lt;strong&gt;包括Git的主要输出都会中文化&lt;/strong&gt;. 安装&lt;code&gt;sudo apt update; sudo apt install language-pack-zh-hans&lt;/code&gt;.&lt;br&gt;需要访问本地Windows的文件的话, 他们一般在&lt;code&gt;/mnt/盘符&lt;/code&gt;处.&lt;/p&gt;
+&lt;h3 id=&#34;Linux&#34;&gt;&lt;a href=&#34;#Linux&#34; class=&#34;headerlink&#34; title=&#34;Linux&#34;&gt;&lt;/a&gt;Linux&lt;/h3&gt;&lt;p&gt;都用上Linux了拱拱觉得也不需要说啥了, 一般发行版都有Git套件的.&lt;br&gt;不过总有人用最小发行版, 这时候可以使用对应发行版的包管理器安装. &lt;del&gt;拱拱就不信有发行版仓库没有Git&lt;/del&gt;&lt;/p&gt;
+&lt;h3 id=&#34;macOS&#34;&gt;&lt;a href=&#34;#macOS&#34; class=&#34;headerlink&#34; title=&#34;macOS&#34;&gt;&lt;/a&gt;macOS&lt;/h3&gt;&lt;p&gt;你需要苹果的XCode命令行套件, 具体去哪找拱拱也不清楚. &lt;/p&gt;
+&lt;h2 id=&#34;0x02-OpenSSH-相关配置&#34;&gt;&lt;a href=&#34;#0x02-OpenSSH-相关配置&#34; class=&#34;headerlink&#34; title=&#34;0x02 OpenSSH 相关配置&#34;&gt;&lt;/a&gt;0x02 OpenSSH 相关配置&lt;/h2&gt;&lt;p&gt;Windows 10 自带OpenSSH套件.&lt;br&gt;要用到的主要命令是&lt;code&gt;ssh-keygen&lt;/code&gt;.&lt;br&gt;一般直接就这么输入进命令行就行了. 可以不用带任何参数.&lt;/p&gt;
+&lt;p&gt;跑完后你会得到一个 私钥文件 &lt;code&gt;id_rsa&lt;/code&gt; / 公钥文件 &lt;code&gt;id_rsa.pub&lt;/code&gt;, 位于&lt;code&gt;~/.ssh/&lt;/code&gt;&lt;br&gt;在Windows下&lt;code&gt;~&lt;/code&gt; = &lt;code&gt;C:\Users\你用户名\&lt;/code&gt;&lt;br&gt;在Linux下&lt;code&gt;~&lt;/code&gt; = &lt;code&gt;/home/你用户名&lt;/code&gt; (如果是root账户的话就是&lt;code&gt;/root/&lt;/code&gt;)&lt;/p&gt;
+&lt;h3 id=&#34;Github相关&#34;&gt;&lt;a href=&#34;#Github相关&#34; class=&#34;headerlink&#34; title=&#34;Github相关&#34;&gt;&lt;/a&gt;Github相关&lt;/h3&gt;&lt;p&gt;Github 在处理用户鉴权时, 使用SSH公钥或HTTPS认证.&lt;br&gt;也就意味着你的远端可以是 &lt;code&gt;git@github.com/后略&lt;/code&gt;[ssh] 或者 &lt;code&gt;https://github.com/后略&lt;/code&gt;[https]&lt;/p&gt;
+&lt;p&gt;使用SSH公钥时, 前往 &lt;a href=&#34;https://github.com/settings/keys&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/settings/keys&lt;/a&gt; 将得到的&lt;code&gt;id_rsa.pub&lt;/code&gt;内容复制粘帖到New SSH key中.&lt;br&gt;使用HTTPS认证时, 一般不需要做什么, 但就是在处理私有仓库(Private Repo)或者Push时会有一个交互, 让你填写用户名和密码. &lt;strong&gt;拱拱本人不推荐这个方式.&lt;/strong&gt;  &lt;/p&gt;
+&lt;h2 id=&#34;0x03-Git-基本配置和食用方法&#34;&gt;&lt;a href=&#34;#0x03-Git-基本配置和食用方法&#34; class=&#34;headerlink&#34; title=&#34;0x03 Git 基本配置和食用方法&#34;&gt;&lt;/a&gt;0x03 Git 基本配置和食用方法&lt;/h2&gt;&lt;p&gt;对于Completely Beginner, Git相关知识无非就这些&lt;/p&gt;
+&lt;p&gt;初始化工作区:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;复制别人的: &lt;code&gt;git clone&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;从头开始: &lt;code&gt;git init&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在工作区上工作:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一般暂存: &lt;code&gt;git add&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;其他: &lt;code&gt;git mv&lt;/code&gt; / &lt;code&gt;git restore&lt;/code&gt; / &lt;code&gt;git rm&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;提交更改:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一般情况: &lt;code&gt;git commit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;出冲突了: &lt;code&gt;git merge&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;和远端同步:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同步远端元数据: &lt;code&gt;git fetch&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;一推一拉: &lt;code&gt;git push&lt;/code&gt;/&lt;code&gt;git pull&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以及修改配置:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git config&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;初次运行前要做的配置&#34;&gt;&lt;a href=&#34;#初次运行前要做的配置&#34; class=&#34;headerlink&#34; title=&#34;初次运行前要做的配置&#34;&gt;&lt;/a&gt;初次运行前要做的配置&lt;/h3&gt;&lt;p&gt;主要使用&lt;code&gt;git config&lt;/code&gt;命令.&lt;/p&gt;
+&lt;p&gt;在Commit前需要设置邮箱和名字:&lt;br&gt;&lt;code&gt;git config --global user.name &amp;quot;你名字, 可以是中文&amp;quot;&lt;/code&gt;&lt;br&gt;&lt;code&gt;git config --global user.email &amp;quot;你邮箱&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Git的默认文本编辑器是&lt;code&gt;vi&lt;/code&gt;/&lt;code&gt;vim&lt;/code&gt;. 如果vim使不来的话, 可以更换默认文本编辑器&lt;br&gt;&lt;code&gt;git config --global core.editor &amp;quot;中略&amp;quot;&lt;/code&gt;&lt;br&gt;参考&lt;a href=&#34;https://help.github.com/cn/github/using-git/associating-text-editors-with-git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github的这篇中文化文档&lt;/a&gt;以获得关于如何配置的资讯.&lt;br&gt;私货: 这里推荐VSCode[GUI/图形界面] 和nano[CLI/命令行界面]&lt;/p&gt;
+&lt;h3 id=&#34;初始化工作区&#34;&gt;&lt;a href=&#34;#初始化工作区&#34; class=&#34;headerlink&#34; title=&#34;初始化工作区&#34;&gt;&lt;/a&gt;初始化工作区&lt;/h3&gt;&lt;p&gt;这里主要使用&lt;code&gt;git init&lt;/code&gt;和&lt;code&gt;git clone&lt;/code&gt;两个命令.  &lt;/p&gt;
+&lt;p&gt;Git-clone用于当远端已有一个仓库时, 将远端仓库原样拉取下来. 适合在加入他人工作时, 要从Github上拉源码编译软件时使用.&lt;br&gt;这会在当前工作目录(如果没有参数的话)创建一个和远端仓库同名的文件夹. 如果已有同名文件夹, 则&lt;strong&gt;要求该文件夹为空&lt;/strong&gt;, 否则将克隆失败.&lt;br&gt;食用方法: &lt;code&gt;git clone &amp;lt;remote-url&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Git-init适合用于没有远端时, 将本地已有的文件夹转换为Git版本控制仓库.&lt;br&gt;如要配置一个Git服务器, 也可以使用&lt;code&gt;git init --bare&lt;/code&gt;创建空仓库.&lt;br&gt;在创建仓库后不要忘记添加远端哦.&lt;/p&gt;
+&lt;h3 id=&#34;在工作区作出更改&#34;&gt;&lt;a href=&#34;#在工作区作出更改&#34; class=&#34;headerlink&#34; title=&#34;在工作区作出更改&#34;&gt;&lt;/a&gt;在工作区作出更改&lt;/h3&gt;&lt;p&gt;基本操作是&lt;code&gt;git add&lt;/code&gt;, 用于&lt;em&gt;暂存&lt;/em&gt;文件 和 &lt;code&gt;git commit&lt;/code&gt;, 用于提交修改.&lt;br&gt;此外还有&lt;code&gt;git rm&lt;/code&gt;, 用于&lt;em&gt;删除&lt;/em&gt;文件 和 &lt;code&gt;git restore&lt;/code&gt;, 用于丢弃工作区改动 以及 &lt;code&gt;git mv&lt;/code&gt;, 用于移动文件&lt;br&gt;检查当前仓库状态&lt;code&gt;git status&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;基本食用方法: (没写到的建议自己查文档, 毕竟真的没怎么用过)  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git add 你要的文件&lt;/code&gt;: 可以直接&lt;code&gt;git add .&lt;/code&gt;或者&lt;code&gt;git add *&lt;/code&gt;将所有已经于保存的更改暂存, &lt;strong&gt;但是容易导致奇怪的问题所以在这么做前先确认下&lt;/strong&gt;.  &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git rm 要删除的文件&lt;/code&gt;: 可以先删除文件后rm(删了但之后再记入暂存), 也可以直接&lt;code&gt;git rm&lt;/code&gt;(就直接删了记入暂存一步到位). &lt;del&gt;&lt;code&gt;git rm *&lt;/code&gt;一键删库跑路&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit -m &amp;quot;提交信息&amp;quot;&lt;/code&gt;, 可以不带&lt;code&gt;-m&lt;/code&gt;但这会导致你在提交时到一个文本编辑器界面. 如果忘记配置默认文本编辑器的话, 他默认文本编辑器是vi, 一键进入地狱难度.&lt;br&gt;携带&lt;code&gt;--allow-empty-message&lt;/code&gt;参数可以允许一个信息为空的提交. &lt;strong&gt;但是不推荐, 极有可能会被其他同行追着打, 实在没东西写了再用.&lt;/strong&gt;&lt;br&gt;如果提交后发现了啥失误, 比如多暂存了, 或者信息填错了, 不用担心. 你可以接着进行更改, 然后在提交时带上&lt;code&gt;--amend&lt;/code&gt;参数. 这样上一个提交就会被这一个提交&lt;strong&gt;替代&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;此外, 可以在仓库根目录下放个&lt;code&gt;.gitignore&lt;/code&gt;文件, 这样Git处理的时候就会&lt;strong&gt;直接忽略他们&lt;/strong&gt;. 你不会希望你密码/API密钥出现在公开的记录里的.&lt;/p&gt;
+&lt;h3 id=&#34;配置远端&#34;&gt;&lt;a href=&#34;#配置远端&#34; class=&#34;headerlink&#34; title=&#34;配置远端&#34;&gt;&lt;/a&gt;配置远端&lt;/h3&gt;&lt;p&gt;和远端相关的是Git-remote模块.  &lt;/p&gt;
+&lt;p&gt;Git是&lt;strong&gt;分布式&lt;/strong&gt;版本管理软件, 意味着远端可以&lt;strong&gt;不止一个&lt;/strong&gt;.&lt;br&gt;如果你的仓库是从Github克隆下来并且只使用Github的话, 请跳过本节. 但在远端不止一个, 或者没有远端需要配置远端相关信息的时候, 你会用到Git-remote模块的. &lt;/p&gt;
+&lt;p&gt;通过执行&lt;code&gt;git remote --verbose&lt;/code&gt;, 你应该会看到类似与如下的输出:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;origin  git@github.com:camberloid/camber.moe (fetch)
+origin  git@github.com:camberloid/camber.moe (push)&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;需要添加远端时, 使用&lt;code&gt;git remote add [远端别名] [URL]&lt;/code&gt;.&lt;br&gt;如果不小心写错了, 或者远端地址发生更改, 使用&lt;code&gt;git remote set-url [远端别名] [新URL]&lt;/code&gt;来更改. &lt;/p&gt;
+&lt;p&gt;常用的操作就这些, 更多操作建议查文档. 在操作后记得&lt;code&gt;git fetch --all&lt;/code&gt;验证远端是否可用.&lt;br&gt;当然, 如果远端咕咕了, 想删掉的话, 请使用&lt;code&gt;git remote delete [远端别名]&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;与远端同步&#34;&gt;&lt;a href=&#34;#与远端同步&#34; class=&#34;headerlink&#34; title=&#34;与远端同步&#34;&gt;&lt;/a&gt;与远端同步&lt;/h3&gt;&lt;p&gt;一推(push)一拉(pull), 组成了Git的远端同步部分.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git push&lt;/code&gt;用于向远端推送你已经&lt;em&gt;提交&lt;/em&gt;(commit)的更改. 请注意只能在&lt;strong&gt;自己已经没有任何更改可以拉取, 并且本地最新更改不晚于远端最新提交的更改&lt;/strong&gt;(窝觉得用&lt;code&gt;最新&lt;/code&gt;不妥)的情况下推送.&lt;br&gt;&lt;code&gt;git pull&lt;/code&gt;用于从远端拉取最新的更改.如果出现了文件冲突, 可以参考&lt;code&gt;Git merge&lt;/code&gt;相关文档. 拱拱没用过所以就不说了.  &lt;/p&gt;
+&lt;p&gt;从Git 2.26还是27开始, 执行&lt;code&gt;git pull&lt;/code&gt;时有如下提示:  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;warning: 不建议在没有为偏离分支指定合并策略时执行 pull 操作。 您可以在执行下一次  
+pull 操作之前执行下面一条命令来抑制本消息：
+
+git config pull.rebase false  # 合并（缺省策略） 
+git config pull.rebase true   # 变基  
+git config pull.ff only       # 仅快进  
+
+您可以将 &amp;quot;git config&amp;quot; 替换为 &amp;quot;git config --global&amp;quot; 以便为所有仓库设置  
+缺省的配置项。您也可以在每次执行 pull 命令时添加 --rebase、--no-rebase，  
+或者 --ff-only 参数覆盖缺省设置。&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;窝也没有去了解那么多. 如有需要可以阅读相关文档.&lt;/p&gt;
+&lt;h3 id=&#34;合并冲突&#34;&gt;&lt;a href=&#34;#合并冲突&#34; class=&#34;headerlink&#34; title=&#34;合并冲突&#34;&gt;&lt;/a&gt;合并冲突&lt;/h3&gt;&lt;p&gt;其实不会/用不熟.&lt;br&gt;这里放个Ref: &lt;a href=&#34;https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;分支的新建与合并&lt;/a&gt;  &lt;/p&gt;
+&lt;!-- Legacy --&gt;
+
+&lt;!-- /Legacy --&gt;
+
+&lt;h2 id=&#34;0x04-Bash&#34;&gt;&lt;a href=&#34;#0x04-Bash&#34; class=&#34;headerlink&#34; title=&#34;0x04 Bash&#34;&gt;&lt;/a&gt;0x04 Bash&lt;/h2&gt;&lt;p&gt;其实我完全忘了Git-scm的Windows套件有Bash.&lt;br&gt;但也不懂怎么教, 故Pass.&lt;/p&gt;
+&lt;h2 id=&#34;0xFD-VSCode-相关&#34;&gt;&lt;a href=&#34;#0xFD-VSCode-相关&#34; class=&#34;headerlink&#34; title=&#34;0xFD VSCode 相关&#34;&gt;&lt;/a&gt;0xFD VSCode 相关&lt;/h2&gt;&lt;p&gt;VSCode有一个&lt;em&gt;源代码管理&lt;/em&gt;部分. 可以基本替代Git CLI使用.&lt;br&gt;他张这个样子:&lt;br&gt;&lt;img src=&#34;/images/Git_and_OSH/Screenshot_20200617_002910.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;可以简单地: 填写消息, 暂存/撤销更改, 提交更改, 拉取和推送等. 是的拱拱就是在安利呢. &lt;/p&gt;
+&lt;h2 id=&#34;0xFE-vim相关&#34;&gt;&lt;a href=&#34;#0xFE-vim相关&#34; class=&#34;headerlink&#34; title=&#34;0xFE vim相关&#34;&gt;&lt;/a&gt;0xFE vim相关&lt;/h2&gt;&lt;p&gt;声明: 拱拱使不来.  &lt;/p&gt;
+&lt;p&gt;最基本的操作是&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;i&lt;/code&gt;: 进入编辑模式, 按下&lt;code&gt;Esc&lt;/code&gt;退出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:wq&lt;/code&gt;: 保存后退出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:q&lt;/code&gt;: 一般退出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:q!&lt;/code&gt;: 不保存退出/强制退出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;0xFF-GPG相关&#34;&gt;&lt;a href=&#34;#0xFF-GPG相关&#34; class=&#34;headerlink&#34; title=&#34;0xFF GPG相关&#34;&gt;&lt;/a&gt;0xFF GPG相关&lt;/h2&gt;&lt;p&gt;GPG的作用是证明 &lt;strong&gt;你是你自己&lt;/strong&gt;. 哲学的基本问题.&lt;br&gt;对于Git, GPG可以对你提交的更改生成一个签名, 以证明&lt;strong&gt;这是你提交的&lt;/strong&gt;. 有的人就是比较Care这件事. &lt;/p&gt;
+&lt;p&gt;如果你没有PGP密钥对, 使用&lt;code&gt;gpg --full-generate-key&lt;/code&gt;跟着提示走创建一组.&lt;br&gt;如果使用Github, 使用&lt;code&gt;gpg --armor --export&lt;/code&gt;导出公钥后前往&lt;a href=&#34;https://github.com/settings/keys&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github的GPG设置&lt;/a&gt;页面在添加PGP公钥原样粘贴上去.&lt;br&gt;然后&lt;code&gt;gpg --list-keys&lt;/code&gt;把&lt;code&gt;pub&lt;/code&gt;下面那行记下(复制), 在git-config中加上 &lt;code&gt;user.signingkey &amp;quot;刚才复制的那行&amp;quot;&lt;/code&gt;, &lt;code&gt;commit.gpgsign=true&lt;/code&gt;. 就好了. &lt;/p&gt;
+&lt;p&gt;如果需要验证的话, 提交个更改, 推送到Github, 在你仓库网页中的&lt;code&gt;commit&lt;/code&gt;一栏出现这么些东西, 你就成功了.&lt;br&gt;&lt;img src=&#34;/images/Git_and_OSH/Screenshot_20200617_005321.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Reference&#34;&gt;&lt;a href=&#34;#Reference&#34; class=&#34;headerlink&#34; title=&#34;Reference&#34;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;p&gt;[1] &lt;a href=&#34;https://help.github.com/cn/github&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://help.github.com/cn/github&lt;/a&gt; 来自Github的中文文档.&lt;br&gt;[2] &lt;a href=&#34;https://git-scm.com/book/zh/v2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://git-scm.com/book/zh/v2&lt;/a&gt; 来自Git-scm的中文教程. 他们的Reference是英文的.&lt;/p&gt;
+&lt;p&gt;拱拱 / Camber / Billy Huang&lt;br&gt;点子开始于20200614, 完成于20200616, 发布于20200617.&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
